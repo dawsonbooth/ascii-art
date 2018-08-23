@@ -43,9 +43,9 @@ def main():
         with open(args.chars, 'r') as f:
             chars = f.read().replace('\n', '')
     else:
-        chars = '@.,:;+*?%S#'
+        chars = ' .\',:;+*?%S#@'
 
-    chars = sorted(chars, key=weight, reverse=(args.invert != None))
+    chars = sorted(chars, key=weight, reverse=(not args.invert))
 
     # Generate ASCII art from image
     ascii_art = image_to_ascii(image, width, height, chars)
@@ -53,12 +53,11 @@ def main():
     # Output ASCII art
     with open(output, 'wb') as f:
         f.write(ascii_art.encode('utf-8'))
-    print('ASCII art saved to ' + output, end='\n')
+    print('\nASCII art saved to ' + output, end='\n\n')
 
-    # Print if small enough
-    if width <= 200 and height <= 100:
+    # Print to console if small enough
+    if width <= 100 and height <= 100:
         print(ascii_art)
-
 
 if __name__ == '__main__':
     main()

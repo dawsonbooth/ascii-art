@@ -10,7 +10,7 @@ def find_char(p, chars):
     return chars[-1]
 
 # Convert image to ASCII chars
-def image_to_ascii(image, width, height, chars="M@%#*+=-:. "):
+def image_to_ascii(image, width, height, chars):
     image = image.resize((width, height)).convert('L')
 
     pixels = image.load()
