@@ -45,10 +45,21 @@ def main():
     else:
         chars = ' .\',:;+*?%S#@'
 
-    chars = sorted(chars, key=weight, reverse=(not args.invert))
+    weighted_chars = dict()
+    max_weight = 0
+    for c in chars:
+        w =  weight(c)
+        if args.invert:
+            w = 1 - w
+        if w > max_weight:
+            max_weight = w
+        weighted_chars[c] = w
+
+    for c in weighted_chars.keys():
+        weighted_chars[c] *= (1 / max_weight)
 
     # Generate ASCII art from image
-    ascii_art = image_to_ascii(image, width, height, chars)
+    ascii_art = image_to_ascii(image, width, height, weighted_chars)
 
     # Output ASCII art
     with open(output, 'wb') as f:
@@ -56,7 +67,7 @@ def main():
     print('\nASCII art saved to ' + output, end='\n\n')
 
     # Print to console if small enough
-    if width <= 100 and height <= 100:
+    if width <= 150 and height <= 150:
         print(ascii_art)
 
 if __name__ == '__main__':

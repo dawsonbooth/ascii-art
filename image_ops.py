@@ -1,16 +1,15 @@
 # Find char with similar darkness to image pixel
-def find_char(p, chars):
-    n = 255/len(chars)
-
-    sections = [n*i for i, v in enumerate(chars)]
-
-    for i, s in enumerate(sections):
-        if p < s:
-            return chars[i-1]
-    return chars[-1]
+def find_char(p, weighted_chars):
+    p /= 255
+    closest_c = next(iter(weighted_chars))
+    for c in weighted_chars.keys():
+        w = weighted_chars[c] # weight
+        if abs(p - w) < abs(p - weighted_chars[closest_c]):
+            closest_c = c
+    return closest_c
 
 # Convert image to ASCII chars
-def image_to_ascii(image, width, height, chars):
+def image_to_ascii(image, width, height, weighted_chars):
     image = image.resize((width, height)).convert('L')
 
     pixels = image.load()
@@ -18,7 +17,7 @@ def image_to_ascii(image, width, height, chars):
 
     for i in range(height):
         for j in range(width):
-            ascii_art += find_char(pixels[j, i], chars)
+            ascii_art += find_char(pixels[j, i], weighted_chars)
             if j == width-1:
                 ascii_art += '\n'
 
