@@ -4,6 +4,7 @@ from PIL import Image
 from image_ops import image_to_ascii
 from weight import weigh_chars
 
+
 # Main function
 def main(args):
 
