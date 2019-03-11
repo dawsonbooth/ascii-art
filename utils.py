@@ -3,10 +3,11 @@ def find_char(p, weighted_chars):
     p /= 255
     closest_c = next(iter(weighted_chars))
     for c in weighted_chars.keys():
-        w = weighted_chars[c] # weight
+        w = weighted_chars[c]  # weight
         if abs(p - w) < abs(p - weighted_chars[closest_c]):
             closest_c = c
     return closest_c
+
 
 # Convert image to ASCII chars
 def image_to_ascii(image, width, length, weighted_chars):
