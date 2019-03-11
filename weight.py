@@ -13,13 +13,14 @@ def weigh(c):
     return n / (w * h)
 
 
-def weigh_chars(chars, invert: bool):
+def weigh_chars(chars, invert: bool, normalize: bool):
     weighted_chars = dict()
     for c in chars:
         w = weigh(c)
         weighted_chars[c] = w if invert else 1 - w
 
-    for c in weighted_chars.keys():
-        weighted_chars[c] *= (1 / max(weighted_chars.values()))
+    if normalize:
+        for c in weighted_chars.keys():
+            weighted_chars[c] *= (1 / max(weighted_chars.values()))
 
     return weighted_chars

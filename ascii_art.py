@@ -25,7 +25,7 @@ def main(args):
         length = args.length
 
     chars = args.chars if args.chars else ' .\',:;+*?%S#@'
-    weighted_chars = weigh_chars(chars, args.invert)
+    weighted_chars = weigh_chars(chars, args.invert, args.normalize)
 
     # Generate ASCII art from image
     ascii_art = image_to_ascii(image, width, length, weighted_chars)
@@ -47,15 +47,16 @@ if __name__ == '__main__':
     parser.add_argument('image', type=str,
                         help='Path to image from which ASCII art will be generated')
     parser.add_argument('output', type=str, help='Path to generated ASCII art')
-    parser.add_argument('-w', '--width', type=int,
+    parser.add_argument('--width', type=int,
                         help='Character width of ASCII art')
-    parser.add_argument('-l', '--length', type=int,
-                        help='Character length of ASCII art')
-    parser.add_argument('-c', '--chars', type=str,
+    parser.add_argument('--height', type=int,
+                        help='Character height of ASCII art')
+    parser.add_argument('--chars', type=str,
                         help='Path to characters to be seen in ASCII art')
-    parser.add_argument('-i', '--invert', type=bool,
+    parser.add_argument('-i', '--invert', type=bool, default=False,
                         help='Whether the ASCII output color is inverted')
-
+    parser.add_argument('-n', '--normalize', type=bool, default=True,
+                        help='Whether the weights of the provided ASCII characters are normalized')
     args = parser.parse_args()
 
     # Run program
