@@ -20,7 +20,9 @@ def weigh_chars(chars, invert: bool, normalize: bool):
         weighted_chars[c] = w if invert else 1 - w
 
     if normalize:
+        cmax = max(weighted_chars.values())
+        cmin = min(weighted_chars.values())
         for c in weighted_chars.keys():
-            weighted_chars[c] *= (1 / max(weighted_chars.values()))
+            weighted_chars[c] = (weighted_chars[c] - cmin) / (cmax - cmin)
 
     return weighted_chars
