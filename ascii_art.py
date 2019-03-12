@@ -6,7 +6,6 @@ from weight import weigh_chars
 
 
 def main(args):
-
     image = Image.open(args.image)
 
     width, height = image.size
@@ -47,7 +46,8 @@ if __name__ == '__main__':
         description='Convert your favorite image into ASCII art')
     parser.add_argument('image', type=str,
                         help='Path to image from which ASCII art will be generated')
-    parser.add_argument('-o', '--output', type=str, help='Path to generated ASCII art')
+    parser.add_argument('-o', '--output', type=str,
+                        help='Path to generated ASCII art')
     parser.add_argument('--width', type=int,
                         help='Character width of ASCII art')
     parser.add_argument('--height', type=int,
