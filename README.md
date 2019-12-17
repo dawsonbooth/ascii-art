@@ -1,16 +1,18 @@
-<img src="logo.png" />
+<div align="center">
+  <img src="logo.png" />
+</div>
 
 # Description
 Named as such, this package is a command-line ASCII art generator written in Python. There is a variety of customization parameters which are detailed below.
 
 # Installation
 With Git installed, simply clone the repository using the command:
-```
+```bash
 git clone https://github.com/dawsonbooth/ascii-art.git
 ```
 # Usage
 This is a command-line program. The main file, ```ascii_art.py``` can be executed as follows: 
-```
+```bash
 python ascii_art.py [-h] [--output OUTPUT] [--width WIDTH] [--height HEIGHT] [--chars CHARS] [--invert] [--normalize] [--terminal] input
 ```
 
@@ -31,7 +33,7 @@ Optional arguments:
   --terminal        Whether to output to the terminal
   ```
 Example:
-```
+```bash
 python ascii_art.py examples/images/einstein.jpg --width 100 --height 50 --terminal --normalize
 ```
 ```
