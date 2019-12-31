@@ -1,6 +1,4 @@
-<div align="center">
-  <img src="logo.png" />
-</div>
+![](logo.png)
 
 # Description
 Named as such, this package is a command-line ASCII art generator written in Python. There is a variety of customization parameters which are detailed below.
