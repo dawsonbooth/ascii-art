@@ -1,6 +1,6 @@
 import argparse
 
-from PIL import Image
+from PIL import Image, ImageFont
 from utils import image_to_ascii
 from weight import weigh_chars
 
@@ -24,7 +24,10 @@ def main(args):
             chars = f.read().replace('\n', '')
     else:
         chars = ' .\',:;+*?%S#@'
-    weighted_chars = weigh_chars(chars, args.invert, args.normalize)
+
+    font = ImageFont.truetype(args.font) if args.font else ImageFont.load_default()
+
+    weighted_chars = weigh_chars(chars, font, args.invert, args.normalize)
 
     # Generate ASCII art from image
     ascii_art = image_to_ascii(image, width, height, weighted_chars)
@@ -54,6 +57,8 @@ if __name__ == '__main__':
                         help='Character height of ASCII art')
     parser.add_argument('--chars', type=str,
                         help='Path to characters to be seen in ASCII art')
+    parser.add_argument('--font', type=str,
+                        help='Font for calculating the character weights')
     parser.add_argument('--invert', action='store_true',
                         help='Whether the ASCII output color is inverted')
     parser.add_argument('--normalize', action='store_true',

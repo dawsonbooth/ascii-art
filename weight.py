@@ -1,10 +1,9 @@
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw
 
 
-def weigh(c):
+def weigh(c, font):
     """Find and return density of dark pixels in the given character"""
     w, h = (6, 11)
-    font = ImageFont.load_default()
     fw, fh = font.getsize(c)
     im = Image.new('L', (fw, fh))
     draw = ImageDraw.Draw(im)
@@ -13,10 +12,10 @@ def weigh(c):
     return n / (w * h)
 
 
-def weigh_chars(chars, invert: bool, normalize: bool):
+def weigh_chars(chars, font, invert: bool, normalize: bool):
     weighted_chars = dict()
     for c in chars:
-        w = weigh(c)
+        w = weigh(c, font)
         weighted_chars[c] = w if invert else 1 - w
 
     if normalize:
