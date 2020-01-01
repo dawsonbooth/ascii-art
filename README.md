@@ -17,7 +17,7 @@ git clone https://github.com/dawsonbooth/ascii-art.git
 This is a command-line program. The main file, `ascii_art.py` can be executed as follows:
 
 ```bash
-python ascii_art.py [-h] [--output OUTPUT] [--width WIDTH] [--height HEIGHT] [--chars CHARS] [--invert] [--normalize] [--terminal] input
+python ascii_art.py [-h] [--output OUTPUT] [--width WIDTH] [--height HEIGHT] [--chars CHARS] [--font FONT] [--invert] [--normalize] [--terminal] input
 ```
 
 Positional arguments:
