@@ -7,7 +7,7 @@ license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/dawsonbooth/ascii-art"
 repository = "https://github.com/dawsonbooth/ascii-art"
-keywords = ["ascii", "art", "font", "image"]
+keywords = ["cli", "console", "ascii", "art", "font", "image"]
 classifiers = [
     "Environment :: Console",
     "Programming Language :: Python :: 3",
@@ -22,7 +22,7 @@ include = [
 ascii-art = 'ascii_art_cli:main'
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.4"
 pillow = "^6.2.1"
 
 [tool.poetry.dev-dependencies]
