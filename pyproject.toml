@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ascii-art-cli"
-version = "0.1.5"
+version = "0.1.6"
 description = "ASCII art generator with multiple customization parameters"
 authors = ["Dawson Booth <pypi@dawsonbooth.com>"]
 license = "MIT"
