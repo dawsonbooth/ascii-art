@@ -2,7 +2,7 @@
 [![](https://img.shields.io/pypi/dw/ascii-art-cli.svg?style=flat)](https://pypi.org/pypi/ascii-art-cli/)
 [![](https://img.shields.io/pypi/pyversions/ascii-art-cli.svg?style=flat)](https://pypi.org/pypi/ascii-art-cli/)
 [![](https://img.shields.io/pypi/format/ascii-art-cli.svg?style=flat)](https://pypi.org/pypi/ascii-art-cli/)
-[![](https://img.shields.io/pypi/l/ascii-art-cli.svg?style=flat)](https://pypi.org/pypi/ascii-art-cli/)
+[![](https://img.shields.io/pypi/l/ascii-art-cli.svg?style=flat)](https://github.com/dawsonbooth/ascii-art/blob/master/LICENSE)
 
 ![](logo.png)
 
@@ -18,7 +18,7 @@ With Python installed, install the package from PyPI with the following command:
 pip install ascii-art-cli
 ```
 
-This package is not to be confused with <a href="https://pypi.org/project/ascii_art/">ascii_art</a> or other various ASCII art programs.
+This package is not to be confused with [ascii_art](https://pypi.org/project/ascii_art/) or other various ASCII art packages.
 
 # Usage
 
@@ -106,3 +106,7 @@ SS%S%%%S%%SSS%S%%SSS#####S#S#S#########;'##++%.. ..'....'%####################@#
 %SS%S%%%%SSS%S%%SSSS######SS##SSS#######,,+S,. ... ....,############@###########@@@#SS%+%%#+%%S+S###
 S%%%S+%%%%%%%%%S%%S###SS##SSSS###########;,''........,############@#############@@##S%SSSSS,%SSSS##S
 ```
+
+# License
+
+This software is released under the terms of [MIT license](LICENSE).
