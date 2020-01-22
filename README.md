@@ -1,10 +1,10 @@
+![ascii-art](https://raw.githubusercontent.com/dawsonbooth/ascii-art/master/logo.png)
+
 [![](https://img.shields.io/pypi/v/ascii-art-cli.svg?style=flat)](https://pypi.org/pypi/ascii-art-cli/)
 [![](https://img.shields.io/pypi/dw/ascii-art-cli.svg?style=flat)](https://pypi.org/pypi/ascii-art-cli/)
 [![](https://img.shields.io/pypi/pyversions/ascii-art-cli.svg?style=flat)](https://pypi.org/pypi/ascii-art-cli/)
 [![](https://img.shields.io/pypi/format/ascii-art-cli.svg?style=flat)](https://pypi.org/pypi/ascii-art-cli/)
 [![](https://img.shields.io/pypi/l/ascii-art-cli.svg?style=flat)](https://github.com/dawsonbooth/ascii-art/blob/master/LICENSE)
-
-![](https://raw.githubusercontent.com/dawsonbooth/ascii-art/master/logo.png)
 
 # Description
 
