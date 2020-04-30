@@ -1,5 +1,5 @@
 <div align="center">
-<img src="(https://raw.githubusercontent.com/dawsonbooth/ascii-art/master/logo.png" alt="ascii-art">
+<img src="https://raw.githubusercontent.com/dawsonbooth/ascii-art/master/logo.png" alt="ascii-art">
 
 [![](https://img.shields.io/pypi/v/ascii-art-cli.svg?style=flat)](https://pypi.org/pypi/ascii-art-cli/)
 [![](https://img.shields.io/pypi/dw/ascii-art-cli.svg?style=flat)](https://pypi.org/pypi/ascii-art-cli/)
