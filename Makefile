@@ -9,7 +9,7 @@ list:
 		}' | grep -v '__\$$' | grep -v 'make\[1\]' | grep -v 'Makefile' | sort"
 
 clean:
-	rm -rf build/ dist/ src/__pycache__/
+	rm -rf build/ dist/ PACKAGE_NAME/__pycache__/
 	rm -f *.spec
 
 version:
