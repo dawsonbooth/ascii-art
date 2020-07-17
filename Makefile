@@ -14,8 +14,15 @@ clean:
 	rm -rf build/ dist/ **/__pycache__/
 	rm -f *.spec **/*.pyc
 
-docs:
+build: clean
+	@poetry build
+
+docs: build
 	@poetry run mkdocs build --clean
+
+publish: clean build docs
+	@mkdocs gh-deploy
+	@poetry publish
 
 version:
 	@echo $(VERSION)
