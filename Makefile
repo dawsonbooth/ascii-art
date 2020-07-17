@@ -1,5 +1,7 @@
 VERSION := $(shell poetry version | grep -oE '[^ ]+$$')
 
+.PHONY: all list clean docs version
+
 all: list
 
 list:
@@ -11,6 +13,9 @@ list:
 clean:
 	rm -rf build/ dist/ **/__pycache__/
 	rm -f *.spec **/*.pyc
+
+docs:
+	@poetry run mkdocs build --clean
 
 version:
 	@echo $(VERSION)

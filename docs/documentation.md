@@ -1,0 +1,3 @@
+# Documentation
+
+::: MODULE_NAME

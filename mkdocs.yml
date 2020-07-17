@@ -1,0 +1,16 @@
+site_name: PACKAGE_NAME
+nav:
+  - Overview: README.md
+  - Documentation: documentation.md
+repo_url: https://github.com/dawsonbooth/PACKAGE_NAME/
+site_url: https://dawsonbooth.github.io/PACKAGE_NAME/
+
+markdown_extensions:
+  - toc:
+      permalink: 🔗
+
+theme:
+  name: readthedocs
+
+plugins:
+  - mkdocstrings
