@@ -18,7 +18,7 @@ include = [
     "LICENSE",
 ]
 packages = [
-    { include = MODULE_NAME },
+    { include = "MODULE_NAME" },
 ]
 
 [tool.poetry.scripts]
