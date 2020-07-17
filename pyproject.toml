@@ -17,6 +17,9 @@ classifiers = [
 include = [
     "LICENSE",
 ]
+packages = [
+    { include = MODULE_NAME },
+]
 
 [tool.poetry.scripts]
 PACKAGE_NAME = 'console:main'
