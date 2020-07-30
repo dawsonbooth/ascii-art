@@ -28,7 +28,7 @@ build:
 	@poetry build
 
 publish:
-	@mkdocs gh-deploy
+	@poetry run mkdocs gh-deploy
 	@poetry publish
 
 version:
