@@ -14,13 +14,20 @@ clean:
 	rm -rf build/ dist/ **/__pycache__/
 	rm -f *.spec **/*.pyc
 
-build: clean
-	@poetry build
+lint:
+	@poetry run pylint MODULE_NAME
 
-docs: build
+test:
+	@poetry run pytest MODULE_NAME/test
+
+docs:
+	@poetry run pydoc-markdown -p MODULE_NAME > docs/documentation.md
 	@poetry run mkdocs build --clean
 
-publish: clean build docs
+build:
+	@poetry build
+
+publish:
 	@mkdocs gh-deploy
 	@poetry publish
 

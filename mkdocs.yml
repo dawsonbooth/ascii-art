@@ -11,6 +11,3 @@ markdown_extensions:
 
 theme:
   name: readthedocs
-
-plugins:
-  - mkdocstrings
