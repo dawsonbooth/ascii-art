@@ -110,7 +110,7 @@ SS%S%%%S%%SSS%S%%SSS#####S#S#S#########;'##++%.. ..'....'%####################@#
 S%%%S+%%%%%%%%%S%%S###SS##SSSS###########;,''........,############@#############@@##S%SSSSS,%SSSS##S
 ```
 
-Feel free to [check out the docs](https://dawsonbooth.github.io/PACKAGE_NAME/) for more information.
+Feel free to [check out the docs](https://dawsonbooth.github.io/ascii-art/) for more information.
 
 # License
 

@@ -1,3 +1,6 @@
+The currently activated Python version 2.7.16 is not supported by the project (^3.5).
+Trying to find and use a compatible version. 
+Using python3 (3.7.6)
 <a name="ascii_art"></a>
 # ascii\_art
 
