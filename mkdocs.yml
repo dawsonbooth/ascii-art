@@ -1,0 +1,13 @@
+site_name: ascii-art
+nav:
+  - Overview: README.md
+  - Documentation: documentation.md
+repo_url: https://github.com/dawsonbooth/ascii-art/
+site_url: https://dawsonbooth.github.io/ascii-art/
+
+markdown_extensions:
+  - toc:
+      permalink: 🔗
+
+theme:
+  name: readthedocs
