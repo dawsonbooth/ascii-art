@@ -2,16 +2,6 @@ import argparse
 
 
 def main(args) -> None:
-    try:
-        print(args.pos)
-        print(f"The first flag is {args.flag1}")
-        if args.verbose:
-            print("Some more info")
-    except KeyboardInterrupt:
-        print("Terminated.")
-
-
-if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description='')
     parser.add_argument('pos', type=str,
@@ -25,4 +15,14 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
+    try:
+        print(args.pos)
+        print(f"The first flag is {args.flag1}")
+        if args.verbose:
+            print("Some more info")
+    except KeyboardInterrupt:
+        print("Terminated.")
+
+
+if __name__ == '__main__':
     main(args)
