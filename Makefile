@@ -1,6 +1,6 @@
 VERSION := $(shell poetry version | grep -oE '[^ ]+$$')
 
-.PHONY: all list clean docs publish version
+.PHONY: all list clean lint test docs publish version
 
 all: list
 
@@ -11,8 +11,9 @@ list:
 		}' | grep -v '__\$$' | grep -v 'make\[1\]' | grep -v 'Makefile' | sort"
 
 clean:
-	rm -rf build/ dist/ **/__pycache__/
-	rm -f *.spec **/*.pyc
+	rm -rf build/ dist/
+	rm -f *.spec
+	@poetry run pyclean .
 
 lint:
 	@poetry run pylint ascii_art
