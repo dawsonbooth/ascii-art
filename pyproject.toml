@@ -26,6 +26,7 @@ PACKAGE_NAME = 'console:main'
 
 [tool.poetry.dependencies]
 python = "^3.6"
+pyclean = "^2.0.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.3.2"
