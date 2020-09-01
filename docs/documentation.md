@@ -1,6 +1,3 @@
-The currently activated Python version 2.7.16 is not supported by the project (^3.5).
-Trying to find and use a compatible version. 
-Using python3 (3.7.6)
 <a name="ascii_art"></a>
 # ascii\_art
 
@@ -30,6 +27,18 @@ image_to_ascii(image, width=None, height=None, chars=' .\',:;+*?%S#@', font=None
 ```
 
 Convert image to ASCII chars
+
+<a name="ascii_art.main"></a>
+# ascii\_art.main
+
+<a name="ascii_art.main.main"></a>
+#### main
+
+```python
+main()
+```
+
+ASCII art generator with multiple customization parameters
 
 <a name="ascii_art.test"></a>
 # ascii\_art.test
