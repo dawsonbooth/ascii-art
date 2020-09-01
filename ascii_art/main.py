@@ -2,7 +2,7 @@ import argparse
 
 from PIL import Image
 
-from ascii_art import image_to_ascii
+from . import image_to_ascii
 
 
 def main():
