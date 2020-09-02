@@ -33,13 +33,13 @@ ascii-art [-h] [--output OUTPUT] [--width WIDTH] [--height HEIGHT] [--chars CHAR
 
 Positional arguments:
 
-```
+```txt
 input: Path to image from which ASCII art will be generated
 ```
 
 Optional arguments:
 
-```
+```txt
   -h, --help        Show the help message and exit
   --output OUTPUT   Path to output generated ASCII art
   --width WIDTH     Character width of ASCII art
