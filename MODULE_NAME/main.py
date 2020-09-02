@@ -1,7 +1,7 @@
 import argparse
 
 
-def main(args) -> None:
+def main() -> None:
     parser = argparse.ArgumentParser(
         description='')
     parser.add_argument('pos', type=str,
@@ -25,4 +25,4 @@ def main(args) -> None:
 
 
 if __name__ == '__main__':
-    main(args)
+    main()

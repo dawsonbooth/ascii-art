@@ -22,7 +22,7 @@ packages = [
 ]
 
 [tool.poetry.scripts]
-PACKAGE_NAME = 'console:main'
+PACKAGE_NAME = 'MODULE_NAME.main:main'
 
 [tool.poetry.dependencies]
 python = "^3.6"
