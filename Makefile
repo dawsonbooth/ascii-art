@@ -1,6 +1,6 @@
 VERSION := $(shell poetry version | grep -oE '[^ ]+$$')
 
-.PHONY: all list clean docs publish version
+.PHONY: all list clean lint test docs build publish version
 
 all: list
 
@@ -32,6 +32,9 @@ build:
 publish:
 	@poetry run mkdocs gh-deploy
 	@poetry publish
+	git commit -m "v$(VERSION)"
+	git tag v$(VERSION)
+	git push origin v$(VERSION)
 
 version:
 	@echo $(VERSION)
