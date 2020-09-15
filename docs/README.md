@@ -1,13 +1,12 @@
 <div align="center">
 <img src="https://raw.githubusercontent.com/dawsonbooth/ascii-art/master/logo.png" alt="ascii-art">
+</div>
 
 [![](https://img.shields.io/pypi/v/ascii-art-cli.svg?style=flat)](https://pypi.org/pypi/ascii-art-cli/)
 [![](https://img.shields.io/pypi/dw/ascii-art-cli.svg?style=flat)](https://pypi.org/pypi/ascii-art-cli/)
 [![](https://img.shields.io/pypi/pyversions/ascii-art-cli.svg?style=flat)](https://pypi.org/pypi/ascii-art-cli/)
 [![](https://img.shields.io/pypi/format/ascii-art-cli.svg?style=flat)](https://pypi.org/pypi/ascii-art-cli/)
 [![](https://img.shields.io/pypi/l/ascii-art-cli.svg?style=flat)](https://github.com/dawsonbooth/ascii-art/blob/master/LICENSE)
-
-</div>
 
 # Description
 
@@ -33,13 +32,13 @@ ascii-art [-h] [--output OUTPUT] [--width WIDTH] [--height HEIGHT] [--chars CHAR
 
 Positional arguments:
 
-```
+```txt
 input: Path to image from which ASCII art will be generated
 ```
 
 Optional arguments:
 
-```
+```txt
   -h, --help        Show the help message and exit
   --output OUTPUT   Path to output generated ASCII art
   --width WIDTH     Character width of ASCII art
@@ -54,7 +53,7 @@ Optional arguments:
 Example:
 
 ```bash
-ascii-art examples/images/einstein.jpg --width 100 --height 50 --font "Courier" --terminal --normalize
+ascii-art examples/images/einstein.jpg --width 100 --height 50 --font "Consolas" --terminal --normalize
 ```
 
 ```txt
