@@ -1,7 +1,7 @@
 import argparse
 
 
-def main() -> None:
+def main() -> int:
     parser = argparse.ArgumentParser(
         description='')
     parser.add_argument('pos', type=str,
@@ -22,7 +22,10 @@ def main() -> None:
             print("Some more info")
     except KeyboardInterrupt:
         print("Terminated.")
+        return 1
+
+    return 0
 
 
 if __name__ == '__main__':
-    main()
+    exit(main())
