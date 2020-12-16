@@ -5,7 +5,7 @@ from PIL import Image
 from . import image_to_ascii
 
 
-def main():
+def main() -> int:
     """ASCII art generator with multiple customization parameters"""
     parser = argparse.ArgumentParser(
         description='Convert your favorite image into ASCII art')
@@ -45,6 +45,8 @@ def main():
             f.write(ascii_art.encode('utf-8'))
         print('\nASCII art saved to ' + args.output, end='\n\n')
 
+    return 0
+
 
 if __name__ == '__main__':
-    main()
+    exit(main())

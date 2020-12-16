@@ -22,7 +22,7 @@ packages = [
 ]
 
 [tool.poetry.scripts]
-ascii-art = 'ascii_art.main:main'
+ascii-art = 'ascii_art.__main__:main'
 
 [tool.poetry.dependencies]
 python = "^3.5"
