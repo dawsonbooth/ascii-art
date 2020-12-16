@@ -23,7 +23,7 @@ def lint(c):
 
 @task
 def test(c):
-    c.run("pytest ascii_art/test")
+    c.run("pytest ascii_art/test.py")
 
 
 @task
