@@ -11,8 +11,6 @@ def main() -> int:
         description='Convert your favorite image into ASCII art')
     parser.add_argument('input', type=str,
                         help='Path to image from which ASCII art will be generated')
-    parser.add_argument('--output', type=str, default=None,
-                        help='Path to output generated ASCII art')
     parser.add_argument('--width', type=int,
                         help='Character width of ASCII art')
     parser.add_argument('--height', type=int,
@@ -25,8 +23,7 @@ def main() -> int:
                         help='Whether the ASCII output color is inverted')
     parser.add_argument('--normalize', action='store_true',
                         help='Whether the weights of the provided ASCII characters are normalized')
-    parser.add_argument('--terminal', action='store_true',
-                        help='Whether to output to the terminal')
+
     args = parser.parse_args()
 
     image = Image.open(args.input)
@@ -35,15 +32,8 @@ def main() -> int:
     ascii_art = image_to_ascii(
         image, args.width, args.height, args.chars, args.font, args.invert, args.normalize)
 
-    # Print to terminal
-    if args.terminal:
-        print(ascii_art)
-
-    # Output ASCII art
-    if args.output:
-        with open(args.output, 'wb') as f:
-            f.write(ascii_art.encode('utf-8'))
-        print('\nASCII art saved to ' + args.output, end='\n\n')
+    # Output to stdout
+    print(ascii_art)
 
     return 0
 

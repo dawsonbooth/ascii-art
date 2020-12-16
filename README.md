@@ -27,33 +27,31 @@ This package is not to be confused with [ascii_art](https://pypi.org/project/asc
 This is a command-line program, and can be executed as follows:
 
 ```bash
-ascii-art [-h] [--output OUTPUT] [--width WIDTH] [--height HEIGHT] [--chars CHARS] [--font FONT] [--invert] [--normalize] [--terminal] input
+ascii-art [-h] [--width WIDTH] [--height HEIGHT] [--chars CHARS] [--font FONT] [--invert] [--normalize] input
 ```
 
 Positional arguments:
 
 ```txt
-input: Path to image from which ASCII art will be generated
+  input            Path to image from which ASCII art will be generated
 ```
 
 Optional arguments:
 
 ```txt
-  -h, --help        Show the help message and exit
-  --output OUTPUT   Path to output generated ASCII art
-  --width WIDTH     Character width of ASCII art
-  --height HEIGHT   Character height of ASCII art
-  --chars CHARS     String containing characters to be seen in ASCII art
-  --font FONT       Font for calculating the character weights
-  --invert          Whether the ASCII output color is inverted
-  --normalize       Whether the weights of the provided ASCII characters are normalized
-  --terminal        Whether to output to the terminal
+  -h, --help       show this help message and exit
+  --width WIDTH    Character width of ASCII art
+  --height HEIGHT  Character height of ASCII art
+  --chars CHARS    String containing characters to be seen in ASCII art
+  --font FONT      Font for calculating the character weights
+  --invert         Whether the ASCII output color is inverted
+  --normalize      Whether the weights of the provided ASCII characters are normalized
 ```
 
 Example:
 
 ```bash
-ascii-art examples/images/einstein.jpg --width 100 --height 50 --font "Consolas" --terminal --normalize
+ascii-art examples/images/einstein.jpg --width 100 --height 50 --font "Consolas" --normalize
 ```
 
 ```txt
@@ -109,7 +107,9 @@ SS%S%%%S%%SSS%S%%SSS#####S#S#S#########;'##++%.. ..'....'%####################@#
 S%%%S+%%%%%%%%%S%%S###SS##SSSS###########;,''........,############@#############@@##S%SSSSS,%SSSS##S
 ```
 
-Feel free to [check out the docs](https://dawsonbooth.github.io/ascii-art/) for more information.
+By default, the command will output the generated ASCII art to the console; however, you may use the `>` operator to redirect it a file. More on that [here](https://linuxcommand.org/lc3_lts0070.php).
+
+Feel free to [check out the docs](https://dawsonbooth.github.io/ascii-art/) for more information on how to use this package.
 
 # License
 
