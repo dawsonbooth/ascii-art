@@ -39,7 +39,7 @@ def image_to_ascii(image, width=None, height=None, chars=' .\',:;+*?%S#@', font=
         height = int(img_h * (width / img_w))
     elif height and not width:
         width = int(img_w * (height / img_h))
-    else:
+    elif not (height or width):
         width, height = img_w, img_h
 
     image = image.resize((width, height)).convert('L')
