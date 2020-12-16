@@ -28,18 +28,18 @@ image_to_ascii(image, width=None, height=None, chars=' .\',:;+*?%S#@', font=None
 
 Convert image to ASCII chars
 
-<a name="ascii_art.main"></a>
-# ascii\_art.main
+<a name="ascii_art.test"></a>
+# ascii\_art.test
 
-<a name="ascii_art.main.main"></a>
+<a name="ascii_art.__main__"></a>
+# ascii\_art.\_\_main\_\_
+
+<a name="ascii_art.__main__.main"></a>
 #### main
 
 ```python
-main()
+main() -> int
 ```
 
 ASCII art generator with multiple customization parameters
-
-<a name="ascii_art.test"></a>
-# ascii\_art.test
 
