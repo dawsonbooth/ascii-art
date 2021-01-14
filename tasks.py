@@ -17,8 +17,18 @@ def clean(c):
 
 
 @task
+def format(c):
+    c.run("black MODULE_NAME --line-length 119")
+
+
+@task
 def lint(c):
-    c.run("pylint MODULE_NAME")
+    c.run("flake8 MODULE_NAME --max-line-length 119 --extend-ignore E203")
+
+
+@task
+def type_check(c):
+    c.run("mypy -m MODULE_NAME --ignore-missing-imports")
 
 
 @task
