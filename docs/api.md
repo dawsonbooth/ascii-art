@@ -33,3 +33,6 @@ Repeat a string an integer number of times!
 <a name="MODULE_NAME.test.test_bar"></a>
 # MODULE\_NAME.test.test\_bar
 
+<a name="MODULE_NAME.__main__"></a>
+# MODULE\_NAME.\_\_main\_\_
+

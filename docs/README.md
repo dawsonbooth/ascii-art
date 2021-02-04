@@ -43,6 +43,7 @@ Then some output (console or file whatever)
 ```txt
 Output here I guess
 ```
+Feel free to [check out the docs](https://dawsonbooth.github.io/PACKAGE_NAME/) for more information.
 
 ## License
 
