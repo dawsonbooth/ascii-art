@@ -9,6 +9,12 @@ theme:
     primary: black
     accent: red
 
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - toc:
+      permalink: True
+
 nav:
   - Overview: README.md
   - API Reference: api.md
