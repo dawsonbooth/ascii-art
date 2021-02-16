@@ -28,7 +28,7 @@ def lint(c):
 
 @task
 def type_check(c):
-    c.run("mypy -m MODULE_NAME --ignore-missing-imports")
+    c.run("mypy MODULE_NAME --ignore-missing-imports")
 
 
 @task
