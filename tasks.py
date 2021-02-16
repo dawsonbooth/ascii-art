@@ -38,7 +38,7 @@ def test(c):
 
 @task
 def docs(c):
-    os.makedirs("docs")
+    os.makedirs("docs", exist_ok=True)
     c.run("pydoc-markdown -p MODULE_NAME > docs/api.md")
     copy("README.md", "docs/")
     c.run("mkdocs build --clean")
