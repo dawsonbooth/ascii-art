@@ -90,10 +90,16 @@ def docs(c, serve=False, deploy=False):
 
 
 @task
-def publish(c):
-    """Publish package to PyPI"""
+def tag(c):
+    """Create GitHub tag"""
     version = _run(c, "poetry version -s").stdout.rstrip()
 
     _run(c, f'git commit -m "v{version}"')
     _run(c, f"git tag v{version}")
     _run(c, f"git push origin v{version}")
+
+
+@task
+def publish(c):
+    """Publish to PyPI"""
+    _run(c, "poetry publish --build")
