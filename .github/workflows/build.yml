@@ -7,6 +7,7 @@ jobs:
     name: Build on node ${{ matrix.python-version }} and ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
+      fail-fast: false
       matrix:
         python-version: [3.6, 3.9]
         os: [ubuntu-latest, windows-latest, macOS-latest]
@@ -20,9 +21,9 @@ jobs:
         id: full-python-version
         run: echo ::set-output name=version::$(python -c "import sys; print('-'.join(str(v) for v in sys.version_info))")
       - name: Install poetry
-        run: |
-          python -m pip install --upgrade pip
-          pip install poetry
+        uses: abatilo/actions-poetry@v2.0.0
+        with:
+          poetry-version: 1.1.4
       - name: Configure poetry
         run: poetry config virtualenvs.in-project true
       - name: Set up cache
