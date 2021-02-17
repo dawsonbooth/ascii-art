@@ -36,5 +36,7 @@ jobs:
         run: poetry run pip --version >/dev/null 2>&1 || rm -rf .venv
       - name: Install Dependencies
         run: poetry install
+      - name: Test
+        run: poetry run inv test
       - name: Build
         run: poetry build
