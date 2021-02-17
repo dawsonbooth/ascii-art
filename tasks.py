@@ -67,7 +67,7 @@ def type_check(c):
 @task(pre=[call(format_, check=True), type_check])
 def lint(c):
     """Run all linting"""
-    _run(c, f"flake8 {ROOT} --max-line-length 119 --extend-ignore 'E203, W503'")
+    _run(c, f"flake8 {ROOT} --max-line-length 119 --extend-ignore E203,W503")
 
 
 @task
