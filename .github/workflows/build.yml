@@ -7,6 +7,7 @@ jobs:
     name: Build on node ${{ matrix.python-version }} and ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
+      fail-fast: false
       matrix:
         python-version: [3.6, 3.9]
         os: [ubuntu-latest, windows-latest, macOS-latest]
@@ -20,6 +21,8 @@ jobs:
         uses: abatilo/actions-poetry@v2.0.0
         with:
           poetry-version: 1.1.4
+      - name: Configure poetry
+        run: poetry config virtualenvs.in-project true
       - name: Install Dependencies
         run: poetry install
       - name: Lint
