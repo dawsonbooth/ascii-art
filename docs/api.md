@@ -1,5 +1,5 @@
-<a name="MODULE_NAME"></a>
-# MODULE\_NAME
+<a name="/Users/dawsonbooth/Projects/poetry-package/MODULE_NAME"></a>
+# /Users/dawsonbooth/Projects/poetry-package/MODULE\_NAME
 
 A one line summary of the module or program, terminated by a period.
 
@@ -15,7 +15,7 @@ examples.
   bar = foo.FunctionBar()
 ```
 
-<a name="MODULE_NAME.repeat_string"></a>
+<a name="/Users/dawsonbooth/Projects/poetry-package/MODULE_NAME.repeat_string"></a>
 #### repeat\_string
 
 ```python
@@ -24,15 +24,15 @@ repeat_string(s: str, n: int) -> str
 
 Repeat a string an integer number of times!
 
-<a name="MODULE_NAME.test"></a>
-# MODULE\_NAME.test
+<a name="/Users/dawsonbooth/Projects/poetry-package/MODULE_NAME.test"></a>
+# /Users/dawsonbooth/Projects/poetry-package/MODULE\_NAME.test
 
-<a name="MODULE_NAME.test.test_foo"></a>
-# MODULE\_NAME.test.test\_foo
+<a name="/Users/dawsonbooth/Projects/poetry-package/MODULE_NAME.test.test_foo"></a>
+# /Users/dawsonbooth/Projects/poetry-package/MODULE\_NAME.test.test\_foo
 
-<a name="MODULE_NAME.test.test_bar"></a>
-# MODULE\_NAME.test.test\_bar
+<a name="/Users/dawsonbooth/Projects/poetry-package/MODULE_NAME.test.test_bar"></a>
+# /Users/dawsonbooth/Projects/poetry-package/MODULE\_NAME.test.test\_bar
 
-<a name="MODULE_NAME.__main__"></a>
-# MODULE\_NAME.\_\_main\_\_
+<a name="/Users/dawsonbooth/Projects/poetry-package/MODULE_NAME.__main__"></a>
+# /Users/dawsonbooth/Projects/poetry-package/MODULE\_NAME.\_\_main\_\_
 
