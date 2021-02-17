@@ -11,7 +11,7 @@ ROOT = Path(__file__).parent
 
 
 def _run(c: Context, command: str) -> Result:
-    return c.run(command, pty=platform.system() != "Windows")
+    return c.run(f"poetry run {command}", pty=platform.system() != "Windows")
 
 
 @task
