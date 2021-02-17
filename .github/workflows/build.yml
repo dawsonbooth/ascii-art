@@ -7,7 +7,6 @@ jobs:
     name: Build on node ${{ matrix.python-version }} and ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
-      fail-fast: false
       matrix:
         python-version: [3.6, 3.9]
         os: [ubuntu-latest, windows-latest, macOS-latest]
@@ -23,6 +22,8 @@ jobs:
           poetry-version: 1.1.4
       - name: Install Dependencies
         run: poetry install
+      - name: Lint
+        run: poetry run inv lint
       - name: Test
         run: poetry run inv test
       - name: Build
