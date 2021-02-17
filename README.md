@@ -1,10 +1,10 @@
 # `PACKAGE_NAME`
 
-[![](https://img.shields.io/pypi/v/PACKAGE_NAME.svg?style=flat)](https://pypi.org/pypi/PACKAGE_NAME/)
-[![](https://img.shields.io/pypi/dw/PACKAGE_NAME.svg?style=flat)](https://pypi.org/pypi/PACKAGE_NAME/)
-[![](https://img.shields.io/pypi/pyversions/PACKAGE_NAME.svg?style=flat)](https://pypi.org/pypi/PACKAGE_NAME/)
-[![](https://img.shields.io/pypi/format/PACKAGE_NAME.svg?style=flat)](https://pypi.org/pypi/PACKAGE_NAME/)
-[![](https://img.shields.io/pypi/l/PACKAGE_NAME.svg?style=flat)](https://github.com/dawsonbooth/PACKAGE_NAME/blob/master/LICENSE)
+[![pypi version](https://img.shields.io/pypi/v/PACKAGE_NAME.svg?style=flat)](https://pypi.org/pypi/PACKAGE_NAME/)
+[![downloads](https://img.shields.io/pypi/dw/PACKAGE_NAME.svg?style=flat)](https://pypi.org/pypi/PACKAGE_NAME/)
+[![python versions](https://img.shields.io/pypi/pyversions/PACKAGE_NAME.svg?style=flat)](https://pypi.org/pypi/PACKAGE_NAME/)
+[![format](https://img.shields.io/pypi/format/PACKAGE_NAME.svg?style=flat)](https://pypi.org/pypi/PACKAGE_NAME/)
+[![license](https://img.shields.io/pypi/l/PACKAGE_NAME.svg?style=flat)](https://github.com/dawsonbooth/PACKAGE_NAME/blob/master/LICENSE)
 
 ## Description
 
@@ -38,11 +38,13 @@ Some info about calling the program.
 ```bash
 python whatever.py > out.txt
 ```
+
 Then some output (console or file whatever)
 
 ```txt
 Output here I guess
 ```
+
 Feel free to [check out the docs](https://dawsonbooth.github.io/PACKAGE_NAME/) for more information.
 
 ## License
