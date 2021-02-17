@@ -18,6 +18,7 @@ def clean(c):
 
 @task
 def format(c):
+    c.run("isort MODULE_NAME --line-length 119 --profile black")
     c.run("black MODULE_NAME --line-length 119")
 
 
