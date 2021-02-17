@@ -53,21 +53,21 @@ def clean(c):
 def format_(c, check=False):
     """Format code"""
     isort_options = ["--check-only", "--diff"] if check else []
-    _run(c, f"isort {ROOT} {' '.join(isort_options)}")
+    _run(c, f"isort {ROOT / 'MODULE_NAME'} {' '.join(isort_options)}")
     black_options = ["--diff", "--check"] if check else ["--quiet"]
-    _run(c, f"black {ROOT} {' '.join(black_options)}")
+    _run(c, f"black {ROOT / 'MODULE_NAME'} {' '.join(black_options)}")
 
 
 @task
 def type_check(c):
     """Run type-checking"""
-    _run(c, f"mypy {ROOT} --ignore-missing-imports")
+    _run(c, f"mypy {ROOT / 'MODULE_NAME'} --ignore-missing-imports")
 
 
 @task(pre=[call(format_, check=True), type_check])
 def lint(c):
     """Run all linting"""
-    _run(c, f"flake8 {ROOT} --max-line-length 119 --extend-ignore E203,W503")
+    _run(c, f"flake8 {ROOT / 'MODULE_NAME'} --max-line-length 119 --extend-ignore E203,W503")
 
 
 @task
