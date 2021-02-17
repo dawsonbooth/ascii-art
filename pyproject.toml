@@ -29,6 +29,7 @@ PACKAGE_NAME = 'MODULE_NAME.__main__:main'
 python = "^3.6"
 
 [tool.poetry.dev-dependencies]
+black = "^20.8b1"
 flake8 = "^3.8.4"
 invoke = "^1.5.0"
 isort = "^5.7.0"
