@@ -4,11 +4,11 @@ on: [push]
 
 jobs:
   build:
-    name: Test on node ${{ matrix.python-version }} and ${{ matrix.os }}
+    name: Build on node ${{ matrix.python-version }} and ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python-version: [3.6]
+        python-version: [3.6, 3.9]
         os: [ubuntu-latest, windows-latest, macOS-latest]
     steps:
       - uses: actions/checkout@v2
