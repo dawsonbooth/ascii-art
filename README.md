@@ -2,6 +2,7 @@
 
 [![pypi version](https://img.shields.io/pypi/v/PACKAGE_NAME.svg?style=flat)](https://pypi.org/pypi/PACKAGE_NAME/)
 [![downloads](https://img.shields.io/pypi/dw/PACKAGE_NAME.svg?style=flat)](https://pypi.org/pypi/PACKAGE_NAME/)
+[![build status](https://github.com/dawsonbooth/PACKAGE_NAME/workflows/build/badge.svg)](https://github.com/dawsonbooth/PACKAGE_NAME/actions?workflow=build)
 [![python versions](https://img.shields.io/pypi/pyversions/PACKAGE_NAME.svg?style=flat)](https://pypi.org/pypi/PACKAGE_NAME/)
 [![format](https://img.shields.io/pypi/format/PACKAGE_NAME.svg?style=flat)](https://pypi.org/pypi/PACKAGE_NAME/)
 [![license](https://img.shields.io/pypi/l/PACKAGE_NAME.svg?style=flat)](https://github.com/dawsonbooth/PACKAGE_NAME/blob/master/LICENSE)
