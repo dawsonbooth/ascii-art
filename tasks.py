@@ -11,9 +11,7 @@ ROOT = Path(__file__).parent
 
 
 def _run(c: Context, command: str) -> Result:
-    if platform.system() == "Windows":
-        return _run(c, command)
-    return _run(c, command, pty=True)
+    return c.run(command, pty=platform.system() != "Windows")
 
 
 @task
