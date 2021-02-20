@@ -2,16 +2,18 @@ import os
 import platform
 import shutil
 from pathlib import Path
+from typing import Sequence
 
 from invoke import call, task
 from invoke.context import Context
 from invoke.runners import Result
 
 ROOT = Path(__file__).parent
+MODULE = ROOT / "MODULE_NAME"
 
 
-def _run(c: Context, command: str) -> Result:
-    return c.run(command, pty=platform.system() != "Windows")
+def _run(c: Context, command: str, args: Sequence[str]) -> Result:
+    return c.run(f"{command} {' '.join(args)}", pty=platform.system() != "Windows")
 
 
 @task
@@ -52,35 +54,44 @@ def clean(c):
 @task(name="format", help={"check": "Checks if source is formatted without applying changes"})
 def format_(c, check=False):
     """Format code"""
-    isort_options = ["--check-only", "--diff"] if check else []
-    _run(c, f"isort {ROOT / 'MODULE_NAME'} {' '.join(isort_options)}")
-    black_options = ["--diff", "--check"] if check else ["--quiet"]
-    _run(c, f"black {ROOT / 'MODULE_NAME'} {' '.join(black_options)}")
+    autoflake_args = ["-r", "--remove-all-unused-imports"]
+    isort_args = []
+    black_args = ["--quiet"]
+
+    if check:
+        isort_args += ["--check-only", "--diff"]
+        black_args += ["--diff", "--check"]
+    else:
+        autoflake_args += ["-i"]
+
+    _run(c, f"autoflake {MODULE}", autoflake_args)
+    _run(c, f"isort {MODULE}", isort_args)
+    _run(c, f"black {MODULE}", black_args)
 
 
 @task
 def type_check(c):
     """Run type-checking"""
-    _run(c, f"mypy {ROOT / 'MODULE_NAME'} --ignore-missing-imports")
+    _run(c, f"mypy {MODULE} --ignore-missing-imports")
 
 
 @task(pre=[call(format_, check=True), type_check])
 def lint(c):
     """Run all linting"""
-    _run(c, f"flake8 {ROOT / 'MODULE_NAME'} --max-line-length 119 --extend-ignore E203,W503")
+    _run(c, f"flake8 {MODULE} --max-line-length 119 --extend-ignore E203,W503")
 
 
 @task
 def test(c):
     """Run tests"""
-    _run(c, f"pytest {ROOT / 'MODULE_NAME' / 'test'}")
+    _run(c, f"pytest {MODULE / 'test'}")
 
 
 @task(help={"serve": "Build the docs and watch for changes", "deploy": "Deploy docs to GitHub pages"})
 def docs(c, serve=False, deploy=False):
     """Build documentation"""
     os.makedirs(ROOT / "docs", exist_ok=True)
-    _run(c, f"pydoc-markdown -p {ROOT / 'MODULE_NAME'} > {ROOT / 'docs' / 'api.md'}")
+    _run(c, f"pydoc-markdown -p {MODULE} > {ROOT / 'docs' / 'api.md'}")
     shutil.copy(ROOT / "README.md", ROOT / "docs")
     _run(c, "mkdocs build --clean")
     if deploy:
