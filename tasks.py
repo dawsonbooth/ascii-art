@@ -12,7 +12,7 @@ ROOT = Path(__file__).parent
 MODULE = ROOT / "MODULE_NAME"
 
 
-def _run(c: Context, command: str, args: Sequence[str]) -> Result:
+def _run(c: Context, command: str, *args: Sequence[str]) -> Result:
     return c.run(f"{command} {' '.join(args)}", pty=platform.system() != "Windows")
 
 
@@ -64,9 +64,9 @@ def format_(c, check=False):
     else:
         autoflake_args += ["-i"]
 
-    _run(c, f"autoflake {MODULE}", autoflake_args)
-    _run(c, f"isort {MODULE}", isort_args)
-    _run(c, f"black {MODULE}", black_args)
+    _run(c, f"autoflake {MODULE}", *autoflake_args)
+    _run(c, f"isort {MODULE}", *isort_args)
+    _run(c, f"black {MODULE}", *black_args)
 
 
 @task
