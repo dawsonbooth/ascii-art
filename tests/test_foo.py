@@ -1,4 +1,4 @@
-from .. import repeat_string
+from MODULE_NAME import repeat_string
 
 
 def test_repeat_string():
