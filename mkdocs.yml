@@ -1,13 +1,20 @@
-site_name: ascii-art
-nav:
-  - Overview: README.md
-  - Documentation: documentation.md
-repo_url: https://github.com/dawsonbooth/ascii-art/
-site_url: https://dawsonbooth.github.io/ascii-art/
+site_name: PACKAGE_NAME
 
-markdown_extensions:
-  - toc:
-      permalink: 🔗
+repo_url: https://github.com/dawsonbooth/PACKAGE_NAME/
+site_url: https://dawsonbooth.github.io/PACKAGE_NAME/
 
 theme:
-  name: readthedocs
+  name: material
+  palette:
+    primary: black
+    accent: red
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - toc:
+      permalink: True
+
+nav:
+  - Overview: README.md
+  - API Reference: api.md
