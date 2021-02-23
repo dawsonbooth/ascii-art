@@ -5,9 +5,9 @@ description = ""
 authors = ["Dawson Booth <pypi@dawsonbooth.com>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/dawsonbooth/PACKAGE_NAME"
-repository = "https://github.com/dawsonbooth/PACKAGE_NAME"
-documentation = "https://dawsonbooth.github.io/PACKAGE_NAME"
+homepage = "https://github.com/dawsonbooth/REPO_NAME"
+repository = "https://github.com/dawsonbooth/REPO_NAME"
+documentation = "https://dawsonbooth.github.io/REPO_NAME"
 keywords = []
 classifiers = [
     "Environment :: Console",

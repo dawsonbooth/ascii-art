@@ -1,11 +1,11 @@
-# `PACKAGE_NAME`
+# `REPO_NAME`
 
 [![pypi version](https://img.shields.io/pypi/v/PACKAGE_NAME.svg?style=flat)](https://pypi.org/pypi/PACKAGE_NAME/)
 [![downloads](https://pepy.tech/badge/PACKAGE_NAME)](https://pepy.tech/project/PACKAGE_NAME)
-[![build status](https://github.com/dawsonbooth/PACKAGE_NAME/workflows/build/badge.svg)](https://github.com/dawsonbooth/PACKAGE_NAME/actions?workflow=build)
+[![build status](https://github.com/dawsonbooth/REPO_NAME/workflows/build/badge.svg)](https://github.com/dawsonbooth/REPO_NAME/actions?workflow=build)
 [![python versions](https://img.shields.io/pypi/pyversions/PACKAGE_NAME.svg?style=flat)](https://pypi.org/pypi/PACKAGE_NAME/)
 [![format](https://img.shields.io/pypi/format/PACKAGE_NAME.svg?style=flat)](https://pypi.org/pypi/PACKAGE_NAME/)
-[![license](https://img.shields.io/pypi/l/PACKAGE_NAME.svg?style=flat)](https://github.com/dawsonbooth/PACKAGE_NAME/blob/master/LICENSE)
+[![license](https://img.shields.io/pypi/l/PACKAGE_NAME.svg?style=flat)](https://github.com/dawsonbooth/REPO_NAME/blob/master/LICENSE)
 
 ## Description
 
@@ -46,7 +46,7 @@ Then some output (console or file whatever)
 Output here I guess
 ```
 
-Feel free to [check out the docs](https://dawsonbooth.github.io/PACKAGE_NAME/) for more information.
+Feel free to [check out the docs](https://dawsonbooth.github.io/REPO_NAME/) for more information.
 
 ## License
 

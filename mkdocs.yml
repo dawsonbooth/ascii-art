@@ -1,7 +1,7 @@
 site_name: PACKAGE_NAME
 
-repo_url: https://github.com/dawsonbooth/PACKAGE_NAME/
-site_url: https://dawsonbooth.github.io/PACKAGE_NAME/
+repo_url: https://github.com/dawsonbooth/REPO_NAME/
+site_url: https://dawsonbooth.github.io/REPO_NAME/
 
 theme:
   name: material
