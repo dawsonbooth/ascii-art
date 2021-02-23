@@ -2,17 +2,15 @@ import os
 import platform
 import shutil
 from pathlib import Path
-from typing import Sequence
 
 from invoke import call, task
 from invoke.context import Context
 from invoke.runners import Result
 
 ROOT = Path(__file__).parent
-MODULE = ROOT / "MODULE_NAME"
 
 
-def _run(c: Context, command: str, *args: Sequence[str]) -> Result:
+def _run(c: Context, command: str, *args: str) -> Result:
     return c.run(f"{command} {' '.join(args)}", pty=platform.system() != "Windows")
 
 
@@ -64,34 +62,35 @@ def format_(c, check=False):
     else:
         autoflake_args += ["-i"]
 
-    _run(c, f"autoflake {MODULE}", *autoflake_args)
-    _run(c, f"isort {MODULE}", *isort_args)
-    _run(c, f"black {MODULE}", *black_args)
+    _run(c, f"autoflake {ROOT}", *autoflake_args)
+    _run(c, f"isort {ROOT}", *isort_args)
+    _run(c, f"black {ROOT}", *black_args)
 
 
 @task
 def type_check(c):
     """Run type-checking"""
-    _run(c, f"mypy {MODULE} --ignore-missing-imports")
+    _run(c, f"mypy {ROOT} --ignore-missing-imports")
 
 
 @task(pre=[call(format_, check=True), type_check])
 def lint(c):
     """Run all linting"""
-    _run(c, f"flake8 {MODULE} --max-line-length 119 --extend-ignore E203,W503")
+    flake8_args = ["--max-line-length 119", "--extend-ignore E203,W503", "--exclude .venv"]
+    _run(c, f"flake8 {ROOT}", *flake8_args)
 
 
 @task
 def test(c):
     """Run tests"""
-    _run(c, f"pytest {MODULE / 'test'}")
+    _run(c, f"pytest {ROOT / 'tests'}")
 
 
 @task(help={"serve": "Build the docs and watch for changes", "deploy": "Deploy docs to GitHub pages"})
 def docs(c, serve=False, deploy=False):
     """Build documentation"""
     os.makedirs(ROOT / "docs", exist_ok=True)
-    _run(c, f"pydoc-markdown -p {MODULE} > {ROOT / 'docs' / 'api.md'}")
+    _run(c, f"pydoc-markdown -p {ROOT / 'MODULE_NAME'} > {ROOT / 'docs' / 'api.md'}")
     shutil.copy(ROOT / "README.md", ROOT / "docs")
     _run(c, "mkdocs build --clean")
     if deploy:
