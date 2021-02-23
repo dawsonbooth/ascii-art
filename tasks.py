@@ -84,7 +84,7 @@ def lint(c):
 @task
 def test(c):
     """Run tests"""
-    _run(c, "pytest testing/*")
+    _run(c, "pytest tests/test*.py")
 
 
 @task(help={"serve": "Build the docs and watch for changes", "deploy": "Deploy docs to GitHub pages"})
