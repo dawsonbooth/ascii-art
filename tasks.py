@@ -9,7 +9,7 @@ from invoke.context import Context
 from invoke.runners import Result
 
 ROOT = Path(__file__).parent
-MODULE = ROOT / "MODULE_NAME"
+MODULE = ROOT / "ascii_art"
 
 
 def _run(c: Context, command: str, *args: Sequence[str]) -> Result:

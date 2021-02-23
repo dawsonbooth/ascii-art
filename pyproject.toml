@@ -1,14 +1,14 @@
 [tool.poetry]
-name = "PACKAGE_NAME"
-version = "0.0.1"
-description = ""
+name = "ascii-art-cli"
+version = "1.2.0"
+description = "ASCII art generator with multiple customization parameters"
 authors = ["Dawson Booth <pypi@dawsonbooth.com>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/dawsonbooth/PACKAGE_NAME"
-repository = "https://github.com/dawsonbooth/PACKAGE_NAME"
-documentation = "https://dawsonbooth.github.io/PACKAGE_NAME"
-keywords = []
+homepage = "https://github.com/dawsonbooth/ascii-art"
+repository = "https://github.com/dawsonbooth/ascii-art"
+documentation = "https://dawsonbooth.github.io/ascii-art"
+keywords = ["cli", "console", "ascii", "art", "font", "image"]
 classifiers = [
     "Environment :: Console",
     "Programming Language :: Python :: 3",
@@ -19,11 +19,11 @@ include = [
     "LICENSE",
 ]
 packages = [
-    { include = "MODULE_NAME" },
+    { include = "ascii_art" },
 ]
 
 [tool.poetry.scripts]
-PACKAGE_NAME = 'MODULE_NAME.__main__:main'
+ascii-art = 'ascii_art.__main__:main'
 
 [tool.poetry.dependencies]
 python = "^3.6"

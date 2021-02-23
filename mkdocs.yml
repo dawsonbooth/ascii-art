@@ -1,7 +1,7 @@
-site_name: PACKAGE_NAME
+site_name: ascii-art-cli
 
-repo_url: https://github.com/dawsonbooth/PACKAGE_NAME/
-site_url: https://dawsonbooth.github.io/PACKAGE_NAME/
+repo_url: https://github.com/dawsonbooth/ascii-art/
+site_url: https://dawsonbooth.github.io/ascii-art/
 
 theme:
   name: material
