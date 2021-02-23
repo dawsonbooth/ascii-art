@@ -29,7 +29,7 @@ def clean_docs(c):
 @task
 def clean_python(c):
     """Clean up python file artifacts"""
-    _run(c, f"pyclean {ROOT}")
+    _run(c, f"pyclean {ROOT / 'MODULE_NAME'} {ROOT / 'tests'}")
 
 
 @task
