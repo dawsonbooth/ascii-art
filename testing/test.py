@@ -1,8 +1,8 @@
 from PIL import Image
 
-from . import image_to_ascii
+from ascii_art import image_to_ascii
 
-einstein = f""",;+;;+;;;,?;?;;;,,,,,,;,;',,'',;%S;;;%SS%SSSSSSSSSSSSSSSSSSSSSSSSS%%%%%%??%%%%;'S+..    .          .
+einstein = """,;+;;+;;;,?;?;;;,,,,,,;,;',,'',;%S;;;%SS%SSSSSSSSSSSSSSSSSSSSSSSSS%%%%%%??%%%%;'S+..    .          .
 +;;;?;+;,++;;,,,,,;,,,,,,,,,';+%S,,%S%SS#SSSSSS####S#S##S##SSSSSSS%S%%%%%%%S%SS+'%'.                
 ?+;;,;+;;,;+;;;,,,,;,,,','',;%%%',S%S%SSSSSS#SSSS#SSSSS####SSS#SSSSS%S%%S%%%%S%%%;;'.            .. 
 %+;%+;?++;;,,;,,,,,,',,',,;+,%?;'?;%SSSSS#SSSSS##SS######@##SSSS#SSSS%S%S%%%%%S%%'%''        .... . 
@@ -57,12 +57,6 @@ S%',,'.;''''...,.....;,'''.'.,%;%%%%%%%%?';SSS%SSSSSSS%%SSSSSS%%SSSS%SS%%%%S%%%%
 
 def test_image_to_ascii():
     image = Image.open("examples/images/einstein.jpg")
-    params = {
-        "width": 100,
-        "height": 50,
-        "font": "Courier",
-        "normalize": True,
-        "invert": True
-    }
+    params = {"width": 100, "height": 50, "font": "Courier", "normalize": True, "invert": True}
     ascii = image_to_ascii(image, **params)
     assert ascii == einstein
