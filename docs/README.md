@@ -16,7 +16,7 @@ This is a short or long textual description of the package.
 With [Python](https://www.python.org/downloads/) installed, simply run the following command to add the package to your project.
 
 ```bash
-pip install PACKAGE_NAME
+python -m pip install PACKAGE_NAME
 ```
 
 ## Usage
