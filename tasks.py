@@ -30,7 +30,7 @@ def clean_docs(c):
 @task
 def clean_python(c):
     """Clean up python file artifacts"""
-    _run(c, f"pyclean {ROOT / 'MODULE_NAME'} {ROOT / 'tests'}")
+    _run(c, f"pyclean {ROOT / 'ascii_art'} {ROOT / 'tests'}")
 
 
 @task
@@ -91,7 +91,7 @@ def test(c):
 def docs(c, serve=False, deploy=False):
     """Build documentation"""
     os.makedirs(ROOT / "docs", exist_ok=True)
-    _run(c, f"pydoc-markdown -p {ROOT / 'MODULE_NAME'} > {ROOT / 'docs' / 'api.md'}")
+    _run(c, f"pydoc-markdown -p {ROOT / 'ascii_art'} > {ROOT / 'docs' / 'api.md'}")
     shutil.copy(ROOT / "README.md", ROOT / "docs")
     _run(c, "mkdocs build --clean")
     if deploy:
