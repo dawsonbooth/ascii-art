@@ -1,241 +1,510 @@
-<!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="None">
-  
-  <link rel="canonical" href="https://dawsonbooth.github.io/ascii-art/">
-  <link rel="shortcut icon" href="img/favicon.ico">
-  <title>ascii-art</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="css/theme.css" />
-  <link rel="stylesheet" href="css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Overview";
-    var mkdocs_page_input_path = "README.md";
-    var mkdocs_page_url = "/ascii-art/";
-  </script>
-  
-  <script src="js/jquery-2.1.1.min.js" defer></script>
-  <script src="js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
     
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> ascii-art</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://dawsonbooth.github.io/ascii-art/">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+    
+    
+      
+        <title>ascii-art-cli</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.cb6bc1d0.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.39b8e14a.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="red">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href=".">Overview</a>
-    <ul class="current">
-    </ul>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="documentation/">Documentation</a>
-                    </li>
-                </ul>
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://dawsonbooth.github.io/ascii-art/" title="ascii-art-cli" class="md-header-nav__button md-logo" aria-label="ascii-art-cli">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            ascii-art-cli
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Overview
+            
+          </span>
+        </div>
       </div>
     </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">ascii-art</a>
-      </nav>
-
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/dawsonbooth/ascii-art/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
       
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href=".">Docs</a> &raquo;</li>
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://dawsonbooth.github.io/ascii-art/" title="ascii-art-cli" class="md-nav__button md-logo" aria-label="ascii-art-cli">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    ascii-art-cli
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/dawsonbooth/ascii-art/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
     
       
-    
-    <li>Overview</li>
-    <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/dawsonbooth/ascii-art/edit/master/docs/README.md"
-          class="icon icon-github"> Edit on GitHub</a>
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Overview
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Overview
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    License
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
-  </ul>
   
-  <hr/>
-</div>
-          <div role="main">
-            <div class="section">
-              
-                <div align="center">
-<img src="https://raw.githubusercontent.com/dawsonbooth/ascii-art/master/logo.png" alt="ascii-art">
-</div>
 
-<p><a href="https://pypi.org/pypi/ascii-art-cli/"><img alt="" src="https://img.shields.io/pypi/v/ascii-art-cli.svg?style=flat" /></a>
-<a href="https://pypi.org/pypi/ascii-art-cli/"><img alt="" src="https://img.shields.io/pypi/dw/ascii-art-cli.svg?style=flat" /></a>
-<a href="https://pypi.org/pypi/ascii-art-cli/"><img alt="" src="https://img.shields.io/pypi/pyversions/ascii-art-cli.svg?style=flat" /></a>
-<a href="https://pypi.org/pypi/ascii-art-cli/"><img alt="" src="https://img.shields.io/pypi/format/ascii-art-cli.svg?style=flat" /></a>
-<a href="https://github.com/dawsonbooth/ascii-art/blob/master/LICENSE"><img alt="" src="https://img.shields.io/pypi/l/ascii-art-cli.svg?style=flat" /></a></p>
-<h1 id="description">Description<a class="headerlink" href="#description" title="Permanent link">🔗</a></h1>
-<p>Named as such, this package is a command-line ASCII art generator written in Python. There is a variety of customization parameters which are detailed below.</p>
-<h1 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">🔗</a></h1>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="api/" class="md-nav__link">
+        API Reference
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    License
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/dawsonbooth/ascii-art/edit/master/docs/README.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="_1"><img alt="ascii-art" src="https://raw.githubusercontent.com/dawsonbooth/ascii-art/master/logo.png" /><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p><a href="https://pypi.org/pypi/ascii-art-cli/"><img alt="pypi version" src="https://img.shields.io/pypi/v/ascii-art-cli.svg?style=flat" /></a>
+<a href="https://pepy.tech/project/ascii-art-cli"><img alt="downloads" src="https://pepy.tech/badge/ascii-art-cli" /></a>
+<a href="https://github.com/dawsonbooth/ascii-art/actions?workflow=build"><img alt="build status" src="https://github.com/dawsonbooth/ascii-art/workflows/build/badge.svg" /></a>
+<a href="https://pypi.org/pypi/ascii-art-cli/"><img alt="python versions" src="https://img.shields.io/pypi/pyversions/ascii-art-cli.svg?style=flat" /></a>
+<a href="https://pypi.org/pypi/ascii-art-cli/"><img alt="format" src="https://img.shields.io/pypi/format/ascii-art-cli.svg?style=flat" /></a>
+<a href="https://github.com/dawsonbooth/ascii-art/blob/master/LICENSE"><img alt="license" src="https://img.shields.io/pypi/l/ascii-art-cli.svg?style=flat" /></a></p>
+<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
+<p>Named as such, this package is a command-line ASCII art generator written in Python. There is a variety of parameters which are detailed below.</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
 <p>With Python installed, install the package from PyPI with the following command:</p>
-<pre><code class="language-bash">pip install ascii-art-cli
-</code></pre>
+<div class="highlight"><pre><span></span><code>python -m pip install ascii-art-cli
+</code></pre></div>
 <p>This package is not to be confused with <a href="https://pypi.org/project/ascii_art/">ascii_art</a> or other various ASCII art packages.</p>
-<h1 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">🔗</a></h1>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>This is a command-line program, and can be executed as follows:</p>
-<pre><code class="language-bash">ascii-art [-h] [--width WIDTH] [--height HEIGHT] [--chars CHARS] [--font FONT] [--invert] [--normalize] input
-</code></pre>
+<div class="highlight"><pre><span></span><code>ascii-art <span class="o">[</span>-h<span class="o">]</span> <span class="o">[</span>--width WIDTH<span class="o">]</span> <span class="o">[</span>--height HEIGHT<span class="o">]</span> <span class="o">[</span>--chars CHARS<span class="o">]</span> <span class="o">[</span>--font FONT<span class="o">]</span> <span class="o">[</span>--invert<span class="o">]</span> <span class="o">[</span>--normalize<span class="o">]</span> input
+</code></pre></div>
 <p>Positional arguments:</p>
-<pre><code class="language-txt">  input            Path to image from which ASCII art will be generated
-</code></pre>
+<div class="highlight"><pre><span></span><code>  input            Path to image from which ASCII art will be generated
+</code></pre></div>
 <p>Optional arguments:</p>
-<pre><code class="language-txt">  -h, --help       show this help message and exit
+<div class="highlight"><pre><span></span><code>  -h, --help       show this help message and exit
   --width WIDTH    Character width of ASCII art
   --height HEIGHT  Character height of ASCII art
   --chars CHARS    String containing characters to be seen in ASCII art
   --font FONT      Font for calculating the character weights
   --invert         Whether the ASCII output color is inverted
   --normalize      Whether the weights of the provided ASCII characters are normalized
-</code></pre>
+</code></pre></div>
 <p>Example:</p>
-<pre><code class="language-bash">ascii-art examples/images/einstein.jpg --width 100 --height 50 --font &quot;Courier&quot; --invert --normalize
-</code></pre>
-<pre><code class="language-txt">,;+;;+;;;,?;?;;;,,,,,,;,;',,'',;%S;;;%SS%SSSSSSSSSSSSSSSSSSSSSSSSS%%%%%%??%%%%;'S+..    .          .
-+;;;?;+;,++;;,,,,,;,,,,,,,,,';+%S,,%S%SS#SSSSSS####S#S##S##SSSSSSS%S%%%%%%%S%SS+'%'.
-?+;;,;+;;,;+;;;,,,,;,,,','',;%%%',S%S%SSSSSS#SSSS#SSSSS####SSS#SSSSS%S%%S%%%%S%%%;;'.            ..
-%+;%+;?++;;,,;,,,,,,',,',,;+,%?;'?;%SSSSS#SSSSS##SS######@##SSSS#SSSS%S%S%%%%%S%%'%''        .... .
-?????;;??;;;+,,+,,,,''',;+;;;;;',%%%SSS#######S###########SSS##SSSSSSS%SS%%%%SSS%?',;,   .    ...
-?+;??++;;+;;;,,,,,''',,;%?%%,,''%,%SSSS#######S#####@#######SSS%#SSSSSS%%%%%%SSSS%;?.'''.          .
-;?%;;;+;;+;,,,,,,''',;S?;,',;,'+,S%?%SSS#@###SS########@#SSSS#SSSSSSSS%SS%%%%S%S%S?%'  .'    .
-???;;;++,;+;,;',''',%S'?;,+,,?.;?%S%%SSS#@############S###SSSSSSSSSSSSSSSS%%SSSSS%+,,.. ',    .
-??+?;;%++;;,,,,,,;';%',,;;;';%';%'.',+,SSS###SSS##SSS%,',SS%S#%SSSSSSSSSSS%SS%SS%%%,;,.  .'
-%;+;?+;+;;;+,,,,,''?''?;?+,;%?.''.'',%SS##S#SSS##SSSSSS?;,;%??SSSSSSSSSSSSSSSSSSS%?%;'+'..'.
-S????;;;;;;;;;,'',,%,;+,%?,,%;'%;;%%%%SSS##@SSS##SS###SSSSSSSSSSSSS%SSSSSS%SSSSSS%?+;,''.'.'
-?,?+;;?;;;,,;,,,'+,''.%%;,,?%+.;?SSSSS%SSS#S#@###@####S##SSSSSSSS%SSSSSSSSSSSSS%%%????'',. .'..    .
-,S;,;;??;;;;,',,''',.,,%;'';%,.%%SS%%%S%%SS####@@#SS#SS#SSSS#SSSSSSSSSSSSSS%SSS%%%%,;?;+.,   .
-%%?;;+%;;;+,,,',.,...,;;,',;?',%SS%%%??SS?%S#@@###SSSS%%+,;%SS#SSS%SSSSSSSSSSSSSSS%%,,+?;,,.   .
-S?%;+;+;,,,,,';'.'.'',%,,,'+%''?S%,,?+?S%%,?S#@#S#SSSSS?+%%%+%SSSS%SSSSSSSSSSSSSSS%%%;?;%%' .
-S,+,;;;+,,,,''......',%''',;?',%?,'##;,?;S?'S@##SSS%%%;';.,S%%SSSS%SSSSS%SSSSSSSSS%S?;%;%;,S.      .
-%%?;+,;,;,''.'......''%',',%,';%%'+S...;#%%'S#SSS%SS%?#S...,?%%SSS%SSS%S%SSSSSSSS%+%%?;;%%;,';
-,+?;;,;,,''''.... ..',?,'''%'';%S,;%,'%%;%,%SSSSS%#S%SSS...S%SSSSSSSSSS%SSSSSSS%S%%%??%?;+;;..,.
-,%';,,;,''''......';.';.',.;'';%,;''%?S;SS'%SSSSS%SS%%%?%%%?+%SSSSSSSSS%%%SSSS%%%%%?%;?%%;,++  ;
-%%',';;,',''....'.., ;%.''.;.,+,?%?,%%%%%,,%SSSSSSSS?%S%%%%%%%S%%SSS%SSS%%SSSS%%%%%%%%%,%;;,;;
-S%',,'.;''''...,.....;,'''.'.,%;%%%%%%%%?';SSS%SSSSSSS%%SSSSSS%%SSSS%SS%%%%S%%%%;;;%%%%%+S?'+,' '
-%;..''''','....'....,.,'.'...?%%%SSSS%SS''%SS%%%SSSS#SS#SSSSSSSS%%S%%%S%%%%%%%??S%',+%%%%?%+'+.. .
-%,. ...''.''...'...;'',..S...,%SSSSSSSS%'%SSSS%?%SSS###SSSSSSSSSSSSS%%%%%%%%%%;%%S;%;;%%%%%%%?,. '
-+'  ....''......'.?,''...,...%S#SS?SSS%,+SSSS%%%%SS#SS#S@#SSSS##SSS%%%%%%++;%?%SS%;?;.%%SSS%%?;''..
-?.  .  .........'.''.....'...%SSSS%SS%S,SS##SSS%?%S##SS########SSSSS%%%%%+;%;SSSSSS.%%%%SSS%;%%',.
-,. ... ........'... ...'''...;#SS%SS%#';SS##@SS%%%%SS@@#S####S##SSS%%+%%?;,%%SSSS%%S%S.%SSSS%%S+'.
-.... .. . .........'..'...'..+%S%%%S#S,,%S#@#SS%SS%%SS@#####S##SS#SS?;%%%;;%S#SSS%SS%S%;SSSS%?S%' .
-?, ....  .... ....'.......,..;?%%SS##',',SSSSS%SSSS?S#S##@#S#S#SSSSS%;%%?%++%%%SS%%SS%%;S#SS,%S%;.'.
-,,.... . ..  .. .........,,..++;%S##SS?'.;%%%;#S@%%%SSSS####SSSSS+SS%?%%?%;%S#%S%S%SS%%+SSSS;;S%?.
-%;.. ....   .. ... ..%'+S''..+%;SSSS%%?SSSS#SS#%S%SSSS#S%S#SSSSSSSSS+?%+%%;SSS%S;SSS%S;S#SSS?+S;''.
-;,  %#... .S.  ..... .. '''..%S;%SSSSSSS#S#S%SS#SSSS%SSSSSSSSSSSSSSS%%%%%%,SSS?;??%S%%%SSSSS,,%, '..
-',   .........  ... .  .,''..%S;S%S%SS@@SSSS%S##S#S#SSSSSSSSSSSSSSSS+%%?%?+SSS%,%%%?%+SS%S%%,%; ' ..
-,' .   . .  ....... .....'...;S,%,?SS%S#%S#SS#SSSS##%SSSSS+SSSSSSSS%;%%%%+%SS%??.'S%%%%;;SS%,'......
-'   ...#.  .. .  .. .....'...,%;%?;;%%%SS#SSSS%S#%%%S%SSSSSSSSSSSSS%,S%%%;.S%?' ..;S;,%.'%,. .......
-'  . . ......  .... .........'%;%%?,',,?;%;%++S%,,%,?S%#SS%SSSSSSSS%?%S%%%'        .'.  .;'.........
-.  ..  . ...   ...............%%%SS;,.'.,'?';,,+SS,'+,;'SSSSSSSSSSS%;SS%+,'            . ...........
-   ..   ..  ....... ..........%%'SSS%,,,?;%%?%%%%%;%,..;;SSS#SSSSSS%,SS%+'        .   . ......'....'
-        . ..... ...............+%;SSS?.%S%%S%S%%%%%?''++%%?SSSSSSSS?SS%,           . ... .....'..',,
-     .    . .  .......'........%S,SS#%.%%%%%%%S%S%?,,%SS#%?SS%SSSSS,S%,         .. ..... .......'',,
-         .......................%S?##S.S#%S%S%%;SS;%%%%SSS%SS%SSSS+SS.              ... ....'. ''+,'
-       . . ... ........'........'S+S#S.;SS%%;%%+#,,+?%S#SS%S%%SSSS%S  .       .   ...  .......',+,';
-            ..'..................;SS#S.+S#SS%;;%S;,,%SSS#SSS?S#S%,%.       .   . .... ..... .,'+,,',
-          ',,''''..........'......S'#S.'%@S%%?;%%';%S%SSSSSS;SS%+. .  .  .  .   .  .. . ....,,;,';,,
-      . ,,,,,,','............'....'SSS,.%SS+%%%S;%S%SS##SS#SS#S?...      .. .  .... ..... ',;,,';,',
-      ,,,',,,,,'''..........'''....%,SS.;%S%%?S%;%SS#S###SS%SS'..   ..   . .  . .   .   .'',++,;,;;,
-    ,,,,,,,,,,,',.'.........''''....'?S%.?%?S%?,SS#SSS###SSSS....  ...   .. ..... .. ...';+%?,;,'','
-. ,,,;,,,,,,,,,,,'''...''''''''''.....?S..%%%%%S##SSSS#S#S%........     .  .......   ..,,,,',;,;'''.
-',,,,,,,,,,',,,,,','....'''''''''......%%..;+;SS@S#SSSSSS,.................... ...   ''',,,',;;+',..
-,,,,,;,,,,,',,;,,,'''.''.'''''''''......%%+,%####S####S%............ ...........   .'',;;;'+,;';''..
-,;,,,;,,,,,,;,,,;,,''.'''''''''..''......?%SSSSSS#SSS%............ ....'........  ..,,,,',,%;,'''..'
-</code></pre>
+<div class="highlight"><pre><span></span><code>ascii-art examples/images/einstein.jpg --width <span class="m">100</span> --height <span class="m">50</span> --font <span class="s2">&quot;Courier&quot;</span> --invert --normalize
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>,;+;;+;;;,?;?;;;,,,,,,;,;&#39;,,&#39;&#39;,;%S;;;%SS%SSSSSSSSSSSSSSSSSSSSSSSSS%%%%%%??%%%%;&#39;S+..    .          .
++;;;?;+;,++;;,,,,,;,,,,,,,,,&#39;;+%S,,%S%SS#SSSSSS####S#S##S##SSSSSSS%S%%%%%%%S%SS+&#39;%&#39;.
+?+;;,;+;;,;+;;;,,,,;,,,&#39;,&#39;&#39;,;%%%&#39;,S%S%SSSSSS#SSSS#SSSSS####SSS#SSSSS%S%%S%%%%S%%%;;&#39;.            ..
+%+;%+;?++;;,,;,,,,,,&#39;,,&#39;,,;+,%?;&#39;?;%SSSSS#SSSSS##SS######@##SSSS#SSSS%S%S%%%%%S%%&#39;%&#39;&#39;        .... .
+?????;;??;;;+,,+,,,,&#39;&#39;&#39;,;+;;;;;&#39;,%%%SSS#######S###########SSS##SSSSSSS%SS%%%%SSS%?&#39;,;,   .    ...
+?+;??++;;+;;;,,,,,&#39;&#39;&#39;,,;%?%%,,&#39;&#39;%,%SSSS#######S#####@#######SSS%#SSSSSS%%%%%%SSSS%;?.&#39;&#39;&#39;.          .
+;?%;;;+;;+;,,,,,,&#39;&#39;&#39;,;S?;,&#39;,;,&#39;+,S%?%SSS#@###SS########@#SSSS#SSSSSSSS%SS%%%%S%S%S?%&#39;  .&#39;    .
+???;;;++,;+;,;&#39;,&#39;&#39;&#39;,%S&#39;?;,+,,?.;?%S%%SSS#@############S###SSSSSSSSSSSSSSSS%%SSSSS%+,,.. &#39;,    .
+??+?;;%++;;,,,,,,;&#39;;%&#39;,,;;;&#39;;%&#39;;%&#39;.&#39;,+,SSS###SSS##SSS%,&#39;,SS%S#%SSSSSSSSSSS%SS%SS%%%,;,.  .&#39;
+%;+;?+;+;;;+,,,,,&#39;&#39;?&#39;&#39;?;?+,;%?.&#39;&#39;.&#39;&#39;,%SS##S#SSS##SSSSSS?;,;%??SSSSSSSSSSSSSSSSSSS%?%;&#39;+&#39;..&#39;.
+S????;;;;;;;;;,&#39;&#39;,,%,;+,%?,,%;&#39;%;;%%%%SSS##@SSS##SS###SSSSSSSSSSSSS%SSSSSS%SSSSSS%?+;,&#39;&#39;.&#39;.&#39;
+?,?+;;?;;;,,;,,,&#39;+,&#39;&#39;.%%;,,?%+.;?SSSSS%SSS#S#@###@####S##SSSSSSSS%SSSSSSSSSSSSS%%%????&#39;&#39;,. .&#39;..    .
+,S;,;;??;;;;,&#39;,,&#39;&#39;&#39;,.,,%;&#39;&#39;;%,.%%SS%%%S%%SS####@@#SS#SS#SSSS#SSSSSSSSSSSSSS%SSS%%%%,;?;+.,   .
+%%?;;+%;;;+,,,&#39;,.,...,;;,&#39;,;?&#39;,%SS%%%??SS?%S#@@###SSSS%%+,;%SS#SSS%SSSSSSSSSSSSSSS%%,,+?;,,.   .
+S?%;+;+;,,,,,&#39;;&#39;.&#39;.&#39;&#39;,%,,,&#39;+%&#39;&#39;?S%,,?+?S%%,?S#@#S#SSSSS?+%%%+%SSSS%SSSSSSSSSSSSSSS%%%;?;%%&#39; .
+S,+,;;;+,,,,&#39;&#39;......&#39;,%&#39;&#39;&#39;,;?&#39;,%?,&#39;##;,?;S?&#39;S@##SSS%%%;&#39;;.,S%%SSSS%SSSSS%SSSSSSSSS%S?;%;%;,S.      .
+%%?;+,;,;,&#39;&#39;.&#39;......&#39;&#39;%&#39;,&#39;,%,&#39;;%%&#39;+S...;#%%&#39;S#SSS%SS%?#S...,?%%SSS%SSS%S%SSSSSSSS%+%%?;;%%;,&#39;;
+,+?;;,;,,&#39;&#39;&#39;&#39;.... ..&#39;,?,&#39;&#39;&#39;%&#39;&#39;;%S,;%,&#39;%%;%,%SSSSS%#S%SSS...S%SSSSSSSSSS%SSSSSSS%S%%%??%?;+;;..,.
+,%&#39;;,,;,&#39;&#39;&#39;&#39;......&#39;;.&#39;;.&#39;,.;&#39;&#39;;%,;&#39;&#39;%?S;SS&#39;%SSSSS%SS%%%?%%%?+%SSSSSSSSS%%%SSSS%%%%%?%;?%%;,++  ;
+%%&#39;,&#39;;;,&#39;,&#39;&#39;....&#39;.., ;%.&#39;&#39;.;.,+,?%?,%%%%%,,%SSSSSSSS?%S%%%%%%%S%%SSS%SSS%%SSSS%%%%%%%%%,%;;,;;
+S%&#39;,,&#39;.;&#39;&#39;&#39;&#39;...,.....;,&#39;&#39;&#39;.&#39;.,%;%%%%%%%%?&#39;;SSS%SSSSSSS%%SSSSSS%%SSSS%SS%%%%S%%%%;;;%%%%%+S?&#39;+,&#39; &#39;
+%;..&#39;&#39;&#39;&#39;&#39;,&#39;....&#39;....,.,&#39;.&#39;...?%%%SSSS%SS&#39;&#39;%SS%%%SSSS#SS#SSSSSSSS%%S%%%S%%%%%%%??S%&#39;,+%%%%?%+&#39;+.. .
+%,. ...&#39;&#39;.&#39;&#39;...&#39;...;&#39;&#39;,..S...,%SSSSSSSS%&#39;%SSSS%?%SSS###SSSSSSSSSSSSS%%%%%%%%%%;%%S;%;;%%%%%%%?,. &#39;
++&#39;  ....&#39;&#39;......&#39;.?,&#39;&#39;...,...%S#SS?SSS%,+SSSS%%%%SS#SS#S@#SSSS##SSS%%%%%%++;%?%SS%;?;.%%SSS%%?;&#39;&#39;..
+?.  .  .........&#39;.&#39;&#39;.....&#39;...%SSSS%SS%S,SS##SSS%?%S##SS########SSSSS%%%%%+;%;SSSSSS.%%%%SSS%;%%&#39;,.
+,. ... ........&#39;... ...&#39;&#39;&#39;...;#SS%SS%#&#39;;SS##@SS%%%%SS@@#S####S##SSS%%+%%?;,%%SSSS%%S%S.%SSSS%%S+&#39;.
+.... .. . .........&#39;..&#39;...&#39;..+%S%%%S#S,,%S#@#SS%SS%%SS@#####S##SS#SS?;%%%;;%S#SSS%SS%S%;SSSS%?S%&#39; .
+?, ....  .... ....&#39;.......,..;?%%SS##&#39;,&#39;,SSSSS%SSSS?S#S##@#S#S#SSSSS%;%%?%++%%%SS%%SS%%;S#SS,%S%;.&#39;.
+,,.... . ..  .. .........,,..++;%S##SS?&#39;.;%%%;#S@%%%SSSS####SSSSS+SS%?%%?%;%S#%S%S%SS%%+SSSS;;S%?.
+%;.. ....   .. ... ..%&#39;+S&#39;&#39;..+%;SSSS%%?SSSS#SS#%S%SSSS#S%S#SSSSSSSSS+?%+%%;SSS%S;SSS%S;S#SSS?+S;&#39;&#39;.
+;,  %#... .S.  ..... .. &#39;&#39;&#39;..%S;%SSSSSSS#S#S%SS#SSSS%SSSSSSSSSSSSSSS%%%%%%,SSS?;??%S%%%SSSSS,,%, &#39;..
+&#39;,   .........  ... .  .,&#39;&#39;..%S;S%S%SS@@SSSS%S##S#S#SSSSSSSSSSSSSSSS+%%?%?+SSS%,%%%?%+SS%S%%,%; &#39; ..
+,&#39; .   . .  ....... .....&#39;...;S,%,?SS%S#%S#SS#SSSS##%SSSSS+SSSSSSSS%;%%%%+%SS%??.&#39;S%%%%;;SS%,&#39;......
+&#39;   ...#.  .. .  .. .....&#39;...,%;%?;;%%%SS#SSSS%S#%%%S%SSSSSSSSSSSSS%,S%%%;.S%?&#39; ..;S;,%.&#39;%,. .......
+&#39;  . . ......  .... .........&#39;%;%%?,&#39;,,?;%;%++S%,,%,?S%#SS%SSSSSSSS%?%S%%%&#39;        .&#39;.  .;&#39;.........
+.  ..  . ...   ...............%%%SS;,.&#39;.,&#39;?&#39;;,,+SS,&#39;+,;&#39;SSSSSSSSSSS%;SS%+,&#39;            . ...........
+   ..   ..  ....... ..........%%&#39;SSS%,,,?;%%?%%%%%;%,..;;SSS#SSSSSS%,SS%+&#39;        .   . ......&#39;....&#39;
+        . ..... ...............+%;SSS?.%S%%S%S%%%%%?&#39;&#39;++%%?SSSSSSSS?SS%,           . ... .....&#39;..&#39;,,
+     .    . .  .......&#39;........%S,SS#%.%%%%%%%S%S%?,,%SS#%?SS%SSSSS,S%,         .. ..... .......&#39;&#39;,,
+         .......................%S?##S.S#%S%S%%;SS;%%%%SSS%SS%SSSS+SS.              ... ....&#39;. &#39;&#39;+,&#39;
+       . . ... ........&#39;........&#39;S+S#S.;SS%%;%%+#,,+?%S#SS%S%%SSSS%S  .       .   ...  .......&#39;,+,&#39;;
+            ..&#39;..................;SS#S.+S#SS%;;%S;,,%SSS#SSS?S#S%,%.       .   . .... ..... .,&#39;+,,&#39;,
+          &#39;,,&#39;&#39;&#39;&#39;..........&#39;......S&#39;#S.&#39;%@S%%?;%%&#39;;%S%SSSSSS;SS%+. .  .  .  .   .  .. . ....,,;,&#39;;,,
+      . ,,,,,,&#39;,&#39;............&#39;....&#39;SSS,.%SS+%%%S;%S%SS##SS#SS#S?...      .. .  .... ..... &#39;,;,,&#39;;,&#39;,
+      ,,,&#39;,,,,,&#39;&#39;&#39;..........&#39;&#39;&#39;....%,SS.;%S%%?S%;%SS#S###SS%SS&#39;..   ..   . .  . .   .   .&#39;&#39;,++,;,;;,
+    ,,,,,,,,,,,&#39;,.&#39;.........&#39;&#39;&#39;&#39;....&#39;?S%.?%?S%?,SS#SSS###SSSS....  ...   .. ..... .. ...&#39;;+%?,;,&#39;&#39;,&#39;
+. ,,,;,,,,,,,,,,,&#39;&#39;&#39;...&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;.....?S..%%%%%S##SSSS#S#S%........     .  .......   ..,,,,&#39;,;,;&#39;&#39;&#39;.
+&#39;,,,,,,,,,,&#39;,,,,,&#39;,&#39;....&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;......%%..;+;SS@S#SSSSSS,.................... ...   &#39;&#39;&#39;,,,&#39;,;;+&#39;,..
+,,,,,;,,,,,&#39;,,;,,,&#39;&#39;&#39;.&#39;&#39;.&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;......%%+,%####S####S%............ ...........   .&#39;&#39;,;;;&#39;+,;&#39;;&#39;&#39;..
+,;,,,;,,,,,,;,,,;,,&#39;&#39;.&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;&#39;..&#39;&#39;......?%SSSSSS#SSS%............ ....&#39;........  ..,,,,&#39;,,%;,&#39;&#39;&#39;..&#39;
+</code></pre></div>
 <p>By default, the command will output the generated ASCII art to the console. If instead you would like to output to a file, feel free to use the redirection <code>&gt;</code> operator. More info on that <a href="https://linuxcommand.org/lc3_lts0070.php">here</a>.</p>
 <p>Feel free to <a href="https://dawsonbooth.github.io/ascii-art/">check out the docs</a> for more information on how to use this package.</p>
-<h1 id="license">License<a class="headerlink" href="#license" title="Permanent link">🔗</a></h1>
+<h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
 <p>This software is released under the terms of <a href="LICENSE">MIT license</a>.</p>
+                
               
-            </div>
+              
+                
+
+
+              
+            </article>
           </div>
-          <footer>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
   
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="documentation/" class="btn btn-neutral float-right" title="Documentation">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+        
+          <a href="api/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                API Reference
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     </div>
   
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
   </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
       
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
+    </div>
+    
+      <script src="assets/javascripts/vendor.18f0862e.min.js"></script>
+      <script src="assets/javascripts/bundle.994580cf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
-          <a href="https://github.com/dawsonbooth/ascii-art/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      <script>
+        app = initialize({
+          base: ".",
+          features: [],
+          search: Object.assign({
+            worker: "assets/javascripts/worker/search.9c0e82ba.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
       
-      
-      
-        <span style="margin-left: 15px"><a href="documentation/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
-</div>
-    <script>var base_url = '.';</script>
-    <script src="js/theme.js" defer></script>
-      <script src="search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        };
-    </script>
-
-</body>
+    
+  </body>
 </html>
-
-<!--
-MkDocs version : 1.1.2
-Build Date UTC : 2020-12-16 02:17:43.323817+00:00
--->

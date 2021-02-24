@@ -9,19 +9,21 @@
       
       
       
-      <link rel="shortcut icon" href="/ascii-art/assets/images/favicon.png">
+        <link rel="canonical" href="https://dawsonbooth.github.io/ascii-art/api/">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
     
     
       
-        <title>ascii-art-cli</title>
+        <title>API Reference - ascii-art-cli</title>
       
     
     
-      <link rel="stylesheet" href="/ascii-art/assets/stylesheets/main.cb6bc1d0.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.cb6bc1d0.min.css">
       
         
-        <link rel="stylesheet" href="/ascii-art/assets/stylesheets/palette.39b8e14a.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
         
           
           
@@ -61,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#homerunnerworkascii-artascii-artascii_art" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -89,7 +96,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              
+              API Reference
             
           </span>
         </div>
@@ -195,7 +202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ascii-art/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         Overview
       </a>
     </li>
@@ -208,11 +215,63 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/ascii-art/api/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          API Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         API Reference
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#weigh" class="md-nav__link">
+    weigh
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#find_char" class="md-nav__link">
+    find_char
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image_to_ascii" class="md-nav__link">
+    image_to_ascii
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -224,11 +283,90 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#weigh" class="md-nav__link">
+    weigh
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#find_char" class="md-nav__link">
+    find_char
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image_to_ascii" class="md-nav__link">
+    image_to_ascii
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
+                
+                  <a href="https://github.com/dawsonbooth/ascii-art/edit/master/docs/api.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <p><a name="/home/runner/work/ascii-art/ascii-art/ascii_art"></a></p>
+<h1 id="homerunnerworkascii-artascii-artascii_art">/home/runner/work/ascii-art/ascii-art/ascii_art<a class="headerlink" href="#homerunnerworkascii-artascii-artascii_art" title="Permanent link">&para;</a></h1>
+<p><a name="/home/runner/work/ascii-art/ascii-art/ascii_art.weigh"></a></p>
+<h4 id="weigh">weigh<a class="headerlink" href="#weigh" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="n">weigh</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">font</span><span class="p">)</span>
+</code></pre></div>
+<p>Find and return density of dark pixels in the given character</p>
+<p><a name="/home/runner/work/ascii-art/ascii-art/ascii_art.find_char"></a></p>
+<h4 id="find_char">find_char<a class="headerlink" href="#find_char" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="n">find_char</span><span class="p">(</span><span class="n">pixel</span><span class="p">,</span> <span class="n">weighted_chars</span><span class="p">)</span>
+</code></pre></div>
+<p>Find and return character from dict with similar darkness to image pixel</p>
+<p><a name="/home/runner/work/ascii-art/ascii-art/ascii_art.image_to_ascii"></a></p>
+<h4 id="image_to_ascii">image_to_ascii<a class="headerlink" href="#image_to_ascii" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="n">image_to_ascii</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">chars</span><span class="o">=</span><span class="s2">&quot; .&#39;,:;+*?%S#@&quot;</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">invert</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</code></pre></div>
+<p>Convert image to ASCII chars</p>
+<p><a name="/home/runner/work/ascii-art/ascii-art/ascii_art.__main__"></a></p>
+<h1 id="homerunnerworkascii-artascii-artascii_art__main__">/home/runner/work/ascii-art/ascii-art/ascii_art.__main__<a class="headerlink" href="#homerunnerworkascii-artascii-artascii_art__main__" title="Permanent link">&para;</a></h1>
+<p><a name="/home/runner/work/ascii-art/ascii-art/ascii_art.__main__.main"></a></p>
+<h4 id="main">main<a class="headerlink" href="#main" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="n">main</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">int</span>
+</code></pre></div>
+<p>ASCII art generator with multiple customization parameters</p>
+                
+              
+              
+                
+
 
               
             </article>
@@ -238,6 +376,27 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href=".." class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Overview
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -255,15 +414,15 @@
       
     </div>
     
-      <script src="/ascii-art/assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="/ascii-art/assets/javascripts/bundle.994580cf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../assets/javascripts/vendor.18f0862e.min.js"></script>
+      <script src="../assets/javascripts/bundle.994580cf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
-          base: "/ascii-art/",
+          base: "..",
           features: [],
           search: Object.assign({
-            worker: "/ascii-art/assets/javascripts/worker/search.9c0e82ba.min.js"
+            worker: "../assets/javascripts/worker/search.9c0e82ba.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
