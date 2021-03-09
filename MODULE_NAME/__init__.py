@@ -5,11 +5,11 @@ overall description of the module or program.  Optionally, it may also
 contain a brief description of exported classes and functions and/or usage
 examples.
 
-  Typical usage example:
+Typical usage example:
 
 ```python
-  foo = ClassFoo()
-  bar = foo.FunctionBar()
+foo = ClassFoo()
+bar = foo.FunctionBar()
 ```
 """
 
