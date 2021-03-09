@@ -85,7 +85,9 @@ def test(c):
     _run(c, "pytest")
 
 
-@task(help={"serve": "Build the docs and watch for changes", "deploy": "Deploy docs to GitHub pages"})
+@task(
+    pre=[clean_docs], help={"serve": "Build the docs and watch for changes", "deploy": "Deploy docs to GitHub pages"}
+)
 def docs(c, serve=False, deploy=False):
     """Build documentation"""
     _run(c, "portray as_html")
