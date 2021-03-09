@@ -92,9 +92,9 @@ def docs(c, serve=False, deploy=False):
     """Build documentation"""
     _run(c, "portray as_html")
     if deploy:
-        _run(c, "portray on_github_pages")
+        _run(c, "ghp-import site -pf")
     if serve:
-        _run(c, "portray in_browser")
+        _run(c, "portray server")
 
 
 @task
