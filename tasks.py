@@ -1,4 +1,3 @@
-import os
 import platform
 import shutil
 from pathlib import Path
@@ -89,14 +88,11 @@ def test(c):
 @task(help={"serve": "Build the docs and watch for changes", "deploy": "Deploy docs to GitHub pages"})
 def docs(c, serve=False, deploy=False):
     """Build documentation"""
-    os.makedirs(ROOT / "docs", exist_ok=True)
-    _run(c, f"pydoc-markdown -p {ROOT / 'MODULE_NAME'} > {ROOT / 'docs' / 'api.md'}")
-    shutil.copy(ROOT / "README.md", ROOT / "docs")
-    _run(c, "mkdocs build --clean")
+    _run(c, "portray as_html")
     if deploy:
-        _run(c, "mkdocs gh-deploy")
+        _run(c, "portray on_github_pages")
     if serve:
-        _run(c, "mkdocs serve")
+        _run(c, "portray in_browser")
 
 
 @task
