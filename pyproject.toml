@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "PACKAGE_NAME"
-version = "0.0.1"
+version = "0.1.0"
 description = ""
 authors = ["Dawson Booth <pypi@dawsonbooth.com>"]
 license = "MIT"
