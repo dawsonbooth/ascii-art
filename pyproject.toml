@@ -22,7 +22,7 @@ packages = [{ include = "MODULE_NAME" }]
 PACKAGE_NAME = "MODULE_NAME.__main__:main"
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.7"
 
 [tool.poetry.dev-dependencies]
 autoflake = "^1.4"
