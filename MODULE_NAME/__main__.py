@@ -1,4 +1,5 @@
 import argparse
+from sys import exit
 
 
 def main() -> int:
