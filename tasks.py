@@ -1,4 +1,3 @@
-import os
 import platform
 import shutil
 from pathlib import Path
@@ -8,7 +7,6 @@ from invoke.context import Context
 from invoke.runners import Result
 
 ROOT = Path(__file__).parent
-MODULE = ROOT / "ascii_art"
 
 
 def _run(c: Context, command: str, *args: str) -> Result:
@@ -30,7 +28,7 @@ def clean_docs(c):
 @task
 def clean_python(c):
     """Clean up python file artifacts"""
-    _run(c, f"pyclean {ROOT / 'ascii_art'} {ROOT / 'tests'}")
+    _run(c, f"dustpan {ROOT}")
 
 
 @task
@@ -87,17 +85,16 @@ def test(c):
     _run(c, "pytest")
 
 
-@task(help={"serve": "Build the docs and watch for changes", "deploy": "Deploy docs to GitHub pages"})
+@task(
+    pre=[clean_docs], help={"serve": "Build the docs and watch for changes", "deploy": "Deploy docs to GitHub pages"}
+)
 def docs(c, serve=False, deploy=False):
     """Build documentation"""
-    os.makedirs(ROOT / "docs", exist_ok=True)
-    _run(c, f"pydoc-markdown -p {ROOT / 'ascii_art'} > {ROOT / 'docs' / 'api.md'}")
-    shutil.copy(ROOT / "README.md", ROOT / "docs")
-    _run(c, "mkdocs build --clean")
+    _run(c, "portray as_html")
     if deploy:
-        _run(c, "mkdocs gh-deploy")
+        _run(c, "ghp-import site -pf")
     if serve:
-        _run(c, "mkdocs serve")
+        _run(c, "portray server")
 
 
 @task
