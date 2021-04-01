@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://dawsonbooth.github.io/ascii-art/</loc>
-     <lastmod>2021-02-24</lastmod>
+     <lastmod>2021-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://dawsonbooth.github.io/ascii-art/api/</loc>
-     <lastmod>2021-02-24</lastmod>
+     <loc>https://dawsonbooth.github.io/ascii-art/reference/ascii_art/</loc>
+     <lastmod>2021-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
