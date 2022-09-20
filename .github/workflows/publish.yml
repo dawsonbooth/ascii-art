@@ -14,11 +14,11 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v1
         with:
-          python-version: 3.7
+          python-version: 3.8
       - name: Install poetry
         uses: abatilo/actions-poetry@v2.0.0
         with:
-          poetry-version: 1.1.4
+          poetry-version: 1.2.1
       - name: Configure poetry
         run: poetry config virtualenvs.in-project true
       - name: Install Dependencies
