@@ -1,7 +1,7 @@
 # ![ascii-art](https://raw.githubusercontent.com/dawsonbooth/ascii-art/master/logo.png)
 
 [![pypi version](https://img.shields.io/pypi/v/ascii-art-cli.svg?style=flat)](https://pypi.org/pypi/ascii-art-cli/)
-[![downloads](https://pepy.tech/badge/ascii-art-cli)](https://pepy.tech/project/ascii-art-cli)
+[![downloads](https://static.pepy.tech/badge/ascii-art-cli)](https://pepy.tech/project/ascii-art-cli)
 [![build status](https://github.com/dawsonbooth/ascii-art/workflows/build/badge.svg)](https://github.com/dawsonbooth/ascii-art/actions?workflow=build)
 [![python versions](https://img.shields.io/pypi/pyversions/ascii-art-cli.svg?style=flat)](https://pypi.org/pypi/ascii-art-cli/)
 [![format](https://img.shields.io/pypi/format/ascii-art-cli.svg?style=flat)](https://pypi.org/pypi/ascii-art-cli/)
