@@ -53,7 +53,7 @@ Example:
 ascii-art examples/images/einstein.jpg --width 100 --height 50 --font "Courier" --invert --normalize
 ```
 
-```txt
+```
 ,;+;;+;;;,?;?;;;,,,,,,;,;',,'',;%S;;;%SS%SSSSSSSSSSSSSSSSSSSSSSSSS%%%%%%??%%%%;'S+..    .          .
 +;;;?;+;,++;;,,,,,;,,,,,,,,,';+%S,,%S%SS#SSSSSS####S#S##S##SSSSSSS%S%%%%%%%S%SS+'%'.
 ?+;;,;+;;,;+;;;,,,,;,,,','',;%%%',S%S%SSSSSS#SSSS#SSSSS####SSS#SSSSS%S%%S%%%%S%%%;;'.            ..
